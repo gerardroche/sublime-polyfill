@@ -92,7 +92,13 @@ sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks a
 
 ## Installation
 
-**Requires Sublime Text >= 3065**
+**Requirements**
+
+* Sublime Text `>=3065`
+* SidebarEnhancements `>=st3#a307090`
+* Some features require Vintageous `^4.0.3`
+
+**Installation**
 
 1. Close Sublime Text
 2. Download or clone this repository to a directory named `tweaks` in the Sublime Text Packages directory for platform:

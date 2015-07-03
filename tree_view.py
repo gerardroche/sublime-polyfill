@@ -69,7 +69,6 @@ class TreeView():
         # Doesn't work if the file under cursor is a folder so don't do that.
 
         self.ensure_file_under_cursor_is_open()
-
         self.window.run_command(command)
         self.ensure_file_under_cursor_is_open_cleanup()
 
