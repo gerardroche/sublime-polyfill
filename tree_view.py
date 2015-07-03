@@ -123,7 +123,7 @@ class TreeViewFinder(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
 
-        # TODO can the current file directory be prefilled?
+        # TODO can the current file directory be prefilled? #3
 
         self.window.run_command('show_panel', { 'panel': 'find_in_files' } )
 
@@ -245,15 +245,15 @@ class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
     def is_enabled(self):
         return self.experimental_features_enabled()
 
-    # @todo open tree view file in vertical split
+    # @todo open tree view file in vertical split #1
     def open_file_in_vertical_split(self, fname):
         self.window.open_file(fname)
 
-    # @todo open tree view file in horizontal split
+    # @todo open tree view file in horizontal split #1
     def open_file_in_horizontal_split(self, fname):
         self.window.open_file(fname)
 
-    # @todo open tree view file in tab
+    # @todo open tree view file in tab #1
     def open_file_in_tab(self, fname):
         self.window.open_file(fname)
 

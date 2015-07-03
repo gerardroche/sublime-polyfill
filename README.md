@@ -59,7 +59,7 @@ sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks a
 * `d` duplicate **(experimental feature)**
 * `h` close node / go to parent node
 * `h` go to parent node / close node
-* `i` open in split **(experimental feature)** *(not implemented yet)*
+* `i` open in split **(experimental feature)** *(not implemented yet)* #1
 * `j` down
 * `J` go to last child
 * `k` up
@@ -68,16 +68,16 @@ sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks a
 * `p` go to parent node
 * `P` go to root node
 * `q` close
-* `s` open in vsplit **(experimental feature)** *(not implemented yet)*
-* `t` open in tab **(experimental feature)** *(not implemented yet)*
+* `s` open in vsplit **(experimental feature)** *(not implemented yet)* #1
+* `t` open in tab **(experimental feature)** *(not implemented yet)* #1
 
 **Overlay**
 
-* `ctrl+i` open in split **(experimental feature)** *(not implemented yet)*
+* `ctrl+i` open in split **(experimental feature)** *(not implemented yet)* #2
 * `ctrl+j` down
 * `ctrl+k` up
-* `ctrl+s` open in vsplit **(experimental feature)** *(not implemented yet)*
-* `ctrl+t` open in tab **(experimental feature)** *(not implemented yet)*
+* `ctrl+s` open in vsplit **(experimental feature)** *(not implemented yet)* #2
+* `ctrl+t` open in tab **(experimental feature)** *(not implemented yet)* #2
 
 **Autocomplete popup**
 
