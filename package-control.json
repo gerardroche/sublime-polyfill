@@ -1,0 +1,13 @@
+{
+    // TODO submit to package control?
+
+    "name": "tweaks",
+    "details": "https://github.com/gerardroche/sublime-tweaks",
+    "labels": ["sidebar", "nerdtree", "ctrlp", "navigation", "toggle", "commands", "vim"],
+    "releases": [
+        {
+            "sublime_text": ">=3000",
+            "tags": true
+        }
+    ]
+}

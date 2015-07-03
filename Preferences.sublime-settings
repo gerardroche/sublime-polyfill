@@ -1,0 +1,7 @@
+{
+    // Enable experimental features
+    "tweaks.experimental_features": false,
+
+    // Enable the `,d` vi mode toggle sidebar keybinding
+    "tweaks.vi_tree_view_toggle": false
+}

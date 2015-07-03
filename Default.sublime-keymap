@@ -1,0 +1,269 @@
+[
+
+    // NOTES
+    // =====
+    //
+    // "sidebar_tree" control context.
+    //
+    // {
+    //     "keys": ["h"],
+    //     "command": "tree_view_move_left",
+    //     "context": [
+    //         { "key": "control", "operand": "sidebar_tree" }
+    //     ]
+    // }
+    //
+    // Additional checks won't work.
+    //
+    // {
+    //     "keys": ["h"],
+    //     "command": "tree_view_move_left",
+    //     "context": [
+    //         { "key": "control", "operand": "sidebar_tree" },
+    //         { "key": "setting.any_setting" }
+    //     ]
+    // }
+
+    /////////////////////
+    // Overlay control //
+    /////////////////////
+
+    {
+        "keys": ["ctrl+j"],
+        "command": "tree_view_move_down",
+        "context": [
+            { "key": "overlay_visible" },
+            { "key": "control", "operand": "overlay_control" }
+        ]
+    },
+    {
+        "keys": ["ctrl+k"],
+        "command": "tree_view_move_up",
+        "context": [
+            { "key": "overlay_visible" },
+            { "key": "control", "operand": "overlay_control" }
+        ]
+    },
+    {
+        "keys": ["ctrl+s"],
+        "command": "overlay_open_file",
+        "args": { "split": true },
+        "context": [
+            { "key": "overlay_visible" },
+            { "key": "control", "operand": "overlay_control" }
+        ]
+    },
+    {
+        "keys": ["ctrl+t"],
+        "command": "overlay_open_file",
+        "args": { "tab": true },
+        "context": [
+            { "key": "overlay_visible" },
+            { "key": "control", "operand": "overlay_control" }
+        ]
+    },
+    {
+        "keys": ["ctrl+v"],
+        "command": "overlay_open_file",
+        "args": { "vsplit": true },
+        "context": [
+            { "key": "overlay_visible" },
+            { "key": "control", "operand": "overlay_control" }
+        ]
+    },
+
+    ////////////////////////////////
+    // Autocomplete popup control //
+    ////////////////////////////////
+
+    {
+        "keys": ["ctrl+n"],
+        "command": "tree_view_move_down",
+        "context": [
+            { "key": "auto_complete_visible" }
+            // TODO what is the control operand for autocomplete?
+        ]
+    },
+    // alias to ctrl+n
+    {
+        "keys": ["ctrl+j"],
+        "command": "tree_view_move_down",
+        "context": [
+            { "key": "auto_complete_visible" }
+            // TODO what is the control operand for autocomplete?
+        ]
+    },
+    {
+        "keys": ["ctrl+p"],
+        "command": "tree_view_move_up",
+        "context": [
+            { "key": "auto_complete_visible" }
+            // TODO what is the control operand for autocomplete?
+        ]
+    },
+    // alias to ctrl+p
+    {
+        "keys": ["ctrl+k"],
+        "command": "tree_view_move_up",
+        "context": [
+            { "key": "auto_complete_visible" }
+            // TODO what is the control operand for autocomplete?
+        ]
+    },
+
+    /////////////////////
+    // Sidebar control //
+    /////////////////////
+
+    // close focused sidebar
+    {
+        "keys": [",", "d"],
+        "command": "tree_view_toggle",
+        "args": { "sidebar_currently_focused": true },
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+
+    // toggle sidebar in vi command mode when sidebar is unfocused
+    {
+        "keys": [",", "d"],
+        "command": "tree_view_toggle",
+        "args": { "sidebar_currently_focused": false },
+        "context": [
+            { "key": "control", "operand": "sidebar_tree", "operator": "not_equal" },
+            { "key": "setting.command_mode" },
+            { "key": "setting.tweaks.vi_tree_view_toggle" }
+        ]
+    },
+
+    {
+        "keys": ["h"],
+        "command": "tree_view_move_left",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["l"],
+        "command": "tree_view_move_right",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["j"],
+        "command": "tree_view_move_down",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["k"],
+        "command": "tree_view_move_up",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["a"],
+        "command": "tree_view_add_file",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["A"],
+        "command": "tree_view_add_folder",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["ctrl+\\"],
+        "command": "tree_view_reveal_active_file"
+    },
+    {
+        "keys": ["d"],
+        "command": "tree_view_duplicate",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["f"],
+        "command": "tree_view_finder",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["f2"],
+        "command": "tree_view_move",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["i"],
+        "command": "tree_view_open_file",
+        "args": { "split": true },
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["J"],
+        "command": "tree_view_go_to_child_node",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["m"],
+        "command": "tree_view_move",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["p"],
+        "command": "tree_view_go_to_root_node",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["P"],
+        "command": "tree_view_go_to_parent_node",
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["s"],
+        "command": "tree_view_open_file",
+        "args": { "vsplit": true },
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+    {
+        "keys": ["t"],
+        "command": "tree_view_open_file",
+        "args": { "tab": true },
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    },
+
+    // close focused sidebar
+    {
+        "keys": ["q"],
+        "command": "tree_view_toggle",
+        "args": { "sidebar_currently_focused": true },
+        "context": [
+            { "key": "control", "operand": "sidebar_tree" }
+        ]
+    }
+]

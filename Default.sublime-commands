@@ -1,0 +1,62 @@
+[
+    {
+        "caption": "Application: Close Window",
+        "command": "close_window"
+    },
+    {
+        "caption": "Application: New File",
+        "command": "new_file"
+    },
+    {
+        "caption": "Application: New Window",
+        "command": "new_window"
+    },
+    {
+        "caption": "Application: Open File",
+        "command": "prompt_open_file"
+    },
+    {
+        "caption": "Application: Open Folder",
+        "command": "prompt_open_folder"
+    },
+    {
+        "caption": "Application: Quit",
+        "command": "exit"
+    },
+    {
+        "caption": "Project: Open",
+        "command": "prompt_open_project_or_workspace"
+    },
+    {
+        "caption": "Project: Open Recent",
+        "command": "prompt_open_recent_project"
+    },
+    {
+        "caption": "Project: Switch",
+        "command": "prompt_switch_project_or_workspace"
+    },
+    {
+        "caption": "Sort User Settings",
+        "command": "sort_user_settings"
+    },
+    {
+        "caption": "Toggle Indent Guide",
+        "command": "toggle_indent_guide"
+    },
+    {
+        "caption": "Toggle Invisibles",
+        "command": "toggle_invisibles"
+    },
+    {
+        "caption": "Toggle Line Numbers",
+        "command": "toggle_line_numbers"
+    },
+    {
+        "caption": "Toggle Preview on Click",
+        "command": "toggle_preview_on_click"
+    },
+    {
+        "caption": "Toggle Rulers",
+        "command": "toggle_rulers"
+    }
+]
