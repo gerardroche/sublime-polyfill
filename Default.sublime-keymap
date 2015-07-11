@@ -133,7 +133,7 @@
         "context": [
             { "key": "control", "operand": "sidebar_tree", "operator": "not_equal" },
             { "key": "setting.command_mode" },
-            { "key": "setting.tweaks.vi_tree_view_toggle" }
+            { "key": "setting.polyfill.vi_tree_view_toggle" }
         ]
     },
 

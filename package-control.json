@@ -1,8 +1,8 @@
 {
     // TODO submit to package control?
 
-    "name": "tweaks",
-    "details": "https://github.com/gerardroche/sublime-tweaks",
+    "name": "polyfill",
+    "details": "https://github.com/gerardroche/sublime-polyfill",
     "labels": ["sidebar", "nerdtree", "ctrlp", "navigation", "toggle", "commands", "vim"],
     "releases": [
         {

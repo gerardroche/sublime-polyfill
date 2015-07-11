@@ -18,13 +18,13 @@
                 "id": "package-settings",
                 "children": [
                     {
-                        "caption": "Tweaks",
+                        "caption": "Polyfill",
                         "children": [
                             {
                                 "caption": "README",
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/tweaks/README.md"
+                                    "file": "${packages}/polyfill/README.md"
                                 }
                             },
                             {
@@ -34,7 +34,7 @@
                                 "caption": "Settings – Default",
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/tweaks/Preferences.sublime-settings"
+                                    "file": "${packages}/polyfill/Preferences.sublime-settings"
                                 }
                             },
                             {
@@ -51,7 +51,7 @@
                                 "caption": "Key Bindings – Default",
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/tweaks/Default (${platform}).sublime-keymap"
+                                    "file": "${packages}/polyfill/Default (${platform}).sublime-keymap"
                                 }
                             },
                             {
@@ -68,7 +68,7 @@
                                 "caption": "LICENSE",
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/tweaks/LICENSE"
+                                    "file": "${packages}/polyfill/LICENSE"
                                 }
                             }
                         ]

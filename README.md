@@ -1,6 +1,6 @@
-# sublime-tweaks
+# sublime-polyfill
 
-sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks and fixes.
+Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 
 ## Overview
 
@@ -10,7 +10,6 @@ sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks a
 * [Configuration](#configuration)
 * [Installation](#installation)
 * [Changelog](#changelog)
-* [Credits](#credits)
 * [License](#license)
 
 ## Features
@@ -58,7 +57,6 @@ sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks a
 * `ctrl+\` reveal active file
 * `d` duplicate **(experimental feature)**
 * `h` close node / go to parent node
-* `h` go to parent node / close node
 * `i` open in split **(experimental feature)** *(not implemented yet)* #1
 * `j` down
 * `J` go to last child
@@ -86,9 +84,9 @@ sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks a
 
 ## Configuration
 
-`tweaks.experimental_features` `<bool>` Default is false
+`polyfill.experimental_features` `<bool>` Default is false
 
-`tweaks.vi_tree_view_toggle` `<bool>` Default is false
+`polyfill.vi_tree_view_toggle` `<bool>` Default is false
 
 ## Installation
 
@@ -101,20 +99,16 @@ sublime-tweaks plugin for Sublime Text 3. Provides various Sublime Text tweaks a
 **Installation**
 
 1. Close Sublime Text
-2. Download or clone this repository to a directory named `tweaks` in the Sublime Text Packages directory for platform:
-    * Linux: `git clone https://github.com/gerardroche/sublime-tweaks.git ~/.config/sublime-text-3/Packages/tweaks`
-    * OS X: `git clone https://github.com/gerardroche/sublime-tweaks.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/tweaks`
-    * Windows: `git clone https://github.com/gerardroche/sublime-php-grammar.git %APPDATA%\Sublime/ Text/ 3/Packages/tweaks`
+2. Download or clone this repository to a directory named `polyfill` in the Sublime Text Packages directory for platform:
+    * Linux: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/.config/sublime-text-3/Packages/polyfill`
+    * OS X: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/polyfill`
+    * Windows: `git clone https://github.com/gerardroche/sublime-polyfill.git %APPDATA%\Sublime/ Text/ 3/Packages/polyfill`
 3. Done
 
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
 
-## Credits
-
-Inspired in part by Vim NERDTree and Vim CtrlP.
-
 ## License
 
-sublime-tweaks is released under the [BSD 3-Clause License](LICENSE)
+sublime-polyfill is released under the [BSD 3-Clause License](LICENSE)

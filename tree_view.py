@@ -75,7 +75,7 @@ class TreeView():
     def experimental_features_enabled(self):
         view = self.window.active_view()
         if view:
-            return bool(view.settings().get('tweaks.experimental_features'))
+            return bool(view.settings().get('polyfill.experimental_features'))
         return False
 
 class TreeViewAddFileCommand(TreeView, sublime_plugin.WindowCommand):
@@ -302,9 +302,10 @@ class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
 
         else:
 
-            # _Note_: If sidebar_currently_focused given as true but the sidebar
-            # is not currently focused: the "focus_sidebar_bar" command won't
-            # actually do anything and focus is returned to the view.
+            # _Note_: "focus_sidebar_bar" command won't actually do anything
+            # if the sidebar is not actually currently focused. Also, focus
+            # is always returned to the view after the "focus_side_bar"
+            # command.
 
             self.window.run_command('focus_side_bar')
 

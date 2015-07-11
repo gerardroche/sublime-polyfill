@@ -42,7 +42,7 @@ class OverlayOpenFileCommand(sublime_plugin.WindowCommand):
     def is_enabled(self):
         view = self.window.active_view()
         if view:
-            return bool(view.settings().get('tweaks.experimental_features'))
+            return bool(view.settings().get('polyfill.experimental_features'))
         return False
 
     # @todo open overlay view file in vertical split #2
