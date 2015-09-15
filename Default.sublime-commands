@@ -58,5 +58,10 @@
     {
         "caption": "Toggle Rulers",
         "command": "toggle_rulers"
+    },
+    {
+        "caption": "Toggle Save on Focus Lost",
+        "command": "toggle_setting",
+        "args": { "setting": "save_on_focus_lost" }
     }
 ]
