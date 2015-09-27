@@ -1,5 +1,9 @@
 # sublime-polyfill
 
+# 0.3.1
+
+* "Toggle Save on Focus Lost" should persist
+
 # 0.3.0
 
 * Added "Toggle Save on Focus Lost" command

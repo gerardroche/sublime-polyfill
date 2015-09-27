@@ -85,3 +85,6 @@ class ToggleLineNumbersCommand(ToggleCommand):
 
 class TogglePreviewOnClickCommand(ToggleCommand):
     pass
+
+class ToggleSaveOnFocusLostCommand(ToggleCommand):
+    pass

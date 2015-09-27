@@ -61,7 +61,6 @@
     },
     {
         "caption": "Toggle Save on Focus Lost",
-        "command": "toggle_setting",
-        "args": { "setting": "save_on_focus_lost" }
+        "command": "toggle_save_on_focus_lost"
     }
 ]
