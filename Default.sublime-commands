@@ -62,5 +62,9 @@
     {
         "caption": "Toggle Save on Focus Lost",
         "command": "toggle_save_on_focus_lost"
+    },
+    {
+        "caption": "View: Groups: Move File to New Group",
+        "command": "new_pane"
     }
 ]
