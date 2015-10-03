@@ -28,29 +28,36 @@ class ToggleCommand(sublime_plugin.WindowCommand):
             current_value = view.settings().get(self.setting_name())
 
             if current_value == self.setting_disabled_value():
-                return 'Show ' + self.setting_description_title()
+                return 'Show ' + self.setting_description()
 
             if current_value == self.setting_enabled_value():
-                return 'Hide ' + self.setting_description_title()
+                return 'Hide ' + self.setting_description()
 
-        return 'Toggle ' + self.setting_description_title()
+        return 'Toggle ' + self.setting_description()
 
     def setting_name(self):
         return self.name()[7:]
 
-    def setting_enabled_value(self):
-        return True
+    def setting_description(self):
+        return self.setting_name().replace('_', ' ').title()
 
     def setting_disabled_value(self):
         return False
 
-    def setting_description_title(self):
-        return self.setting_name().replace('_', ' ').title()
+    def setting_enabled_value(self):
+        return True
 
 class ToggleIndentGuideCommand(ToggleCommand):
 
+    """
+    Toggle Indent Guide
+    """
+
     def setting_name(self):
         return 'indent_guide_options'
+
+    def setting_description(self):
+        return 'Indent Guide'
 
     def setting_disabled_value(self):
         return []
@@ -58,10 +65,11 @@ class ToggleIndentGuideCommand(ToggleCommand):
     def setting_enabled_value(self):
         return ['draw_normal', 'draw_active']
 
-    def setting_description_title(self):
-        return 'Indent Guide'
-
 class ToggleInvisiblesCommand(ToggleCommand):
+
+    """
+    Toggle Invisibles
+    """
 
     def setting_name(self):
         return 'draw_white_space'
@@ -72,7 +80,27 @@ class ToggleInvisiblesCommand(ToggleCommand):
     def setting_enabled_value(self):
         return 'all'
 
+class ToggleLineNumbersCommand(ToggleCommand):
+
+    """
+    Toggle Line Numbers
+    """
+
+    pass
+
+class TogglePreviewOnClickCommand(ToggleCommand):
+
+    """
+    Toggle Preview on Click
+    """
+
+    pass
+
 class ToggleRulersCommand(ToggleCommand):
+
+    """
+    Toggle Rulers
+    """
 
     def setting_disabled_value(self):
         return []
@@ -80,11 +108,10 @@ class ToggleRulersCommand(ToggleCommand):
     def setting_enabled_value(self):
         return [80, 120]
 
-class ToggleLineNumbersCommand(ToggleCommand):
-    pass
-
-class TogglePreviewOnClickCommand(ToggleCommand):
-    pass
-
 class ToggleSaveOnFocusLostCommand(ToggleCommand):
+
+    """
+    Toggle Save on Lost Focus
+    """
+
     pass
