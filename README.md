@@ -21,11 +21,7 @@ Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 * Close sidebar `q`
 * Close and open sidebar nodes with `h` and `l`
 * Toggle sidebar in *Vi/Vintage/Vintageous* with `,d`
-* Toggle indent guides
-* Toggle invisibles
-* Toggle line numbers
-* Toggle preview on click
-* Toggle rulers
+* Toggle indent guide, invisibles, line numbers, preview on click, rulers, and save on lost focus
 * Open recent project
 * Sort user settings
 
@@ -46,6 +42,8 @@ Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 * `Toggle Line Numbers`
 * `Toggle Preview on Click`
 * `Toggle Rulers`
+* `Toggle Save on Lost Focus`
+* `View: Groups: Move File to New Group`
 
 ## Key Bindings
 
