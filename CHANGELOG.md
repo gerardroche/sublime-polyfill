@@ -1,8 +1,9 @@
 # sublime-polyfill
 
-# 0.4.0-dev
+# 0.4.0
 
-* Add "View: Groups: Move File to New Group" to command palette
+* Added: command palette: "View: Groups: Move File to New Group"
+* Renamed: command file from "overlay.py" "overlay_open_file.py"
 
 # 0.3.1
 
