@@ -1,4 +1,4 @@
-# sublime-polyfill
+# gerardroche/sublime-polyfill
 
 Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 
@@ -109,4 +109,4 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-sublime-polyfill is released under the [BSD 3-Clause License](LICENSE)
+Released under the [BSD 3-Clause License](LICENSE).
