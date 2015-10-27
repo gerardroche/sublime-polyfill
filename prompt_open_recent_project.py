@@ -6,20 +6,27 @@ import json
 class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
 
     def run(self):
-        recent_workspaces = self.recent_workspaces()
-        if not recent_workspaces:
-            sublime.status_message('No recent projects!')
-            return
+        self.recent_workspaces = self.get_recent_workspaces()
+        if not self.recent_workspaces:
+            return False
 
-        self.window.show_quick_panel(recent_workspaces, self.on_done)
+        # only display workspaces that really exist
+        self.recent_workspaces_that_really_exist = []
+        for recent_workspace in self.recent_workspaces:
+            if os.path.isfile(os.path.expanduser(recent_workspace)):
+                self.recent_workspaces_that_really_exist.append(recent_workspace)
+
+        self.window.show_quick_panel(self.recent_workspaces_that_really_exist, self.on_done)
 
     def on_done(self, index):
         if index == -1:
             return
 
+        index = self.recent_workspaces.index(self.recent_workspaces_that_really_exist[index])
+
         self.window.run_command('open_recent_project_or_workspace', {'index': index})
 
-    def recent_workspaces(self):
+    def get_recent_workspaces(self):
         """
         Returns an list > 0; otherwise None
         """
