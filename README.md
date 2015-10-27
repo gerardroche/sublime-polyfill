@@ -15,15 +15,12 @@ Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 ## Features
 
 * Navigate sidebar with `j` and `k`
-* Navigate sidebar nodes with go to parent node `p`, root `P`, and last `J`
-* Navigate overlays with `ctrl+j` and `ctrl+k`
-* Navigate autocomplete popup with `ctrl+n` or `ctrl+j`  and `ctrl+p` or `ctrl+k`
-* Close sidebar `q`
-* Close and open sidebar nodes with `h` and `l`
-* Toggle sidebar in *Vi/Vintage/Vintageous* with `,d`
-* Toggle indent guide, invisibles, line numbers, preview on click, rulers, and save on lost focus
-* Open recent project
-* Sort user settings
+* Navigate sidebar nodes with go to parent node `p`, root `P`, last `J`, and more
+* Navigate overlays and popups with `ctrl+j` and `ctrl+k`
+* Navigate autocomplete popup with `ctrl+n` and `ctrl+p`
+* Toggle sidebar with `,d` when using *Vintage/Vintageous*
+* Toggle indent guides command, and line numbers, rulers, invisibles, and more
+* Open recent project command, Sort user settings command, and more
 
 ## Commands
 
@@ -54,6 +51,7 @@ Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 * `A` add folder **(experimental feature)**
 * `ctrl+\` reveal active file
 * `d` duplicate **(experimental feature)**
+* `f` find in files **(experimental feature)**
 * `h` close node / go to parent node
 * `i` open in split **(experimental feature)** *(not implemented yet)* #1
 * `j` down
@@ -88,11 +86,11 @@ Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 
 ## Installation
 
-**Requirements**
+**Dependencies**
 
 * Sublime Text `>=3065`
-* SidebarEnhancements `>=st3#a307090`
-* Some features require Vintageous `^4.0.3`
+* [SidebarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements) `>=st3#a307090`
+* Some features only work with [Vintageous](https://packagecontrol.io/packages/Vintageous) `^4.0.3`
 
 **Installation**
 
