@@ -1,0 +1,4 @@
+# polyfill 0.4.0 changelog
+
+* Added: command palette: "View: Groups: Move File to New Group"
+* Renamed: command file from "overlay.py" "overlay_open_file.py"
