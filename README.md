@@ -88,7 +88,7 @@ Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 
 **Dependencies**
 
-* Sublime Text `>=3065`
+* Sublime Text `>=3095`
 * [SidebarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements) `>=st3#a307090`
 * Some features only work with [Vintageous](https://packagecontrol.io/packages/Vintageous) `^4.0.3`
 
