@@ -21,7 +21,7 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
 
     def recent_workspaces(self):
         """
-        Returns an array > 0; otherwise None
+        Returns an list > 0; otherwise None
         """
 
         session = self.load_session()
@@ -51,6 +51,10 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
         return None
 
     def load_session(self):
+        """
+        Returns dict or None if no session exists
+        """
+
         local_session_path = os.path.join(os.path.dirname(sublime.packages_path()), 'Local')
         local_auto_save_session_file = os.path.join(local_session_path, 'Auto Save Session.sublime_session')
         local_session_file = os.path.join(local_session_path, 'Session.sublime_session')
