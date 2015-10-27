@@ -1,5 +1,9 @@
 # sublime-polyfill
 
+# 0.6.0
+
+* Add package control messages
+
 # 0.5.0
 
 * Fixed several ctrl+alt+{n} set layout keymap issues

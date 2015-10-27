@@ -92,7 +92,18 @@ Plugin for Sublime Text 3. Inspired by Vim NERDTree and Vim CtrlP.
 * [SidebarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements) `>=st3#a307090`
 * Some features only work with [Vintageous](https://packagecontrol.io/packages/Vintageous) `^4.0.3`
 
-**Installation**
+### Package Control installation
+
+The preferred method of installation is via Package Control.
+
+1. Install [Package Control](https://packagecontrol.io).
+2. From inside Sublime Text, open Package Control's Command Pallet: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows, Linux) or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac.
+3. Type `install package` and hit Return. A list of available packages will be displayed.
+4. Type `polyfill` and hit Return. The package will be downloaded to the appropriate directory.
+5. Restart Sublime Text to complete installation. The features listed above should now be available.
+
+
+### Manual installation
 
 1. Close Sublime Text
 2. Download or clone this repository to a directory named `polyfill` in the Sublime Text Packages directory for platform:
