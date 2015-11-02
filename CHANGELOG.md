@@ -1,5 +1,9 @@
 # gerardroche/sublime-polyfill changelog
 
+## 0.7.0-dev
+
+* Added: CHANGELOG link to package settings menu
+
 ## 0.6.0
 
 * Added: package control messages
