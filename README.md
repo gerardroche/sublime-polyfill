@@ -1,6 +1,6 @@
 # gerardroche/sublime-polyfill
 
-A plugin for Sublime Text. Inspired by Vim NERDTree and Vim CtrlP.
+A plugin for Sublime Text. Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
 **Sublime Text 3 only**
 
@@ -11,6 +11,7 @@ A plugin for Sublime Text. Inspired by Vim NERDTree and Vim CtrlP.
 * [Key Bindings](#key-bindings)
 * [Configuration](#configuration)
 * [Installation](#installation)
+* [Contributing](#contributing)
 * [Changelog](#changelog)
 * [License](#license)
 
@@ -104,15 +105,18 @@ The preferred method of installation is via Package Control.
 4. Type `polyfill` and hit Return. The package will be downloaded to the appropriate directory.
 5. Restart Sublime Text to complete installation. The features listed above should now be available.
 
-
 ### Manual installation
 
-1. Close Sublime Text
-2. Download or clone this repository to a directory named `polyfill` in the Sublime Text Packages directory for platform:
+1. Close Sublime Text.
+2. Download or clone this repository to a directory named `polyfill` in the Sublime Text Packages directory for your platform:
     * Linux: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/.config/sublime-text-3/Packages/polyfill`
     * OS X: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/polyfill`
     * Windows: `git clone https://github.com/gerardroche/sublime-polyfill.git %APPDATA%\Sublime/ Text/ 3/Packages/polyfill`
-3. Done
+3. Restart Sublime Text to complete installation. The features listed above should now be available.
+
+## Contributing
+
+Your issue reports and pull requests are always welcome.
 
 ## Changelog
 
