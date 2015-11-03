@@ -1,20 +1,13 @@
 [
-
     // NOTES
     // =====
     //
-    // "sidebar_tree" control context.
+    // Settings checks won't work in the "sidebar_tree" control context
+    // ----------------------------------------------------------------
     //
-    // {
-    //     "keys": ["h"],
-    //     "command": "tree_view_move_left",
-    //     "context": [
-    //         { "key": "control", "operand": "sidebar_tree" }
-    //     ]
-    // }
-    //
-    // Additional checks won't work.
-    //
+    // Example, the following won't work, the "setting.any_setting" key
+    // check won't do anything. To work around this, see how the tree
+    // view commands work with settings.
     // {
     //     "keys": ["h"],
     //     "command": "tree_view_move_left",
@@ -23,6 +16,7 @@
     //         { "key": "setting.any_setting" }
     //     ]
     // }
+    //
 
     /////////////////////
     // Overlay control //
@@ -81,16 +75,15 @@
         "command": "tree_view_move_down",
         "context": [
             { "key": "auto_complete_visible" }
-            // TODO what is the control operand for autocomplete?
+            // @todo Add control operand constraint. What is the control operand for the autocomplete popup?
         ]
     },
-    // alias to ctrl+n
     {
-        "keys": ["ctrl+j"],
+        "keys": ["ctrl+j"], // alias of ctrl+n
         "command": "tree_view_move_down",
         "context": [
             { "key": "auto_complete_visible" }
-            // TODO what is the control operand for autocomplete?
+            // @todo Add control operand constraint. What is the control operand for the autocomplete popup?
         ]
     },
     {
@@ -98,24 +91,22 @@
         "command": "tree_view_move_up",
         "context": [
             { "key": "auto_complete_visible" }
-            // TODO what is the control operand for autocomplete?
+            // @todo Add control operand constraint. What is the control operand for the autocomplete popup?
         ]
     },
-    // alias to ctrl+p
     {
-        "keys": ["ctrl+k"],
+        "keys": ["ctrl+k"], // alias of ctrl+p
         "command": "tree_view_move_up",
         "context": [
             { "key": "auto_complete_visible" }
-            // TODO what is the control operand for autocomplete?
+            // @todo Add control operand constraint. What is the control operand for the autocomplete popup?
         ]
     },
 
-    /////////////////////
-    // Sidebar control //
-    /////////////////////
+    /////////////////////////////////
+    // Tree View - Sidebar control //
+    /////////////////////////////////
 
-    // close focused sidebar
     {
         "keys": [",", "d"],
         "command": "tree_view_toggle",
@@ -124,8 +115,6 @@
             { "key": "control", "operand": "sidebar_tree" }
         ]
     },
-
-    // toggle sidebar in vi command mode when sidebar is unfocused
     {
         "keys": [",", "d"],
         "command": "tree_view_toggle",
@@ -136,7 +125,6 @@
             { "key": "setting.polyfill.vi_tree_view_toggle" }
         ]
     },
-
     {
         "keys": ["h"],
         "command": "tree_view_move_left",
@@ -256,8 +244,6 @@
             { "key": "control", "operand": "sidebar_tree" }
         ]
     },
-
-    // close focused sidebar
     {
         "keys": ["q"],
         "command": "tree_view_toggle",
