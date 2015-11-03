@@ -3,6 +3,7 @@
 ## 0.7.0-dev
 
 * Added: CHANGELOG link to package settings menu
+* Changed: Toggle sidebar in vintage/vintageous with ,d is now enabled by default
 
 ## 0.6.0
 

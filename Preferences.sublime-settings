@@ -3,5 +3,5 @@
     "polyfill.experimental_features": false,
 
     // Enable the `,d` vi mode toggle sidebar keybinding
-    "polyfill.vi_tree_view_toggle": false
+    "polyfill.vi_tree_view_toggle": true
 }
