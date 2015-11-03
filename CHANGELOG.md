@@ -5,6 +5,7 @@
 * Added: CHANGELOG link to package settings menu
 * Changed: Toggle sidebar in vintage/vintageous with ,d is now enabled by default
 * Removed: package control messages; it takes too much time to maintain these, see CHANGELOG
+* Fixed: Open Recent Project command now only prompts to open recent projects that really exist
 
 ## 0.6.0
 
