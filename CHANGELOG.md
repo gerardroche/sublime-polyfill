@@ -1,6 +1,6 @@
 # gerardroche/sublime-polyfill changelog
 
-## 0.7.0-dev
+## 0.7.0
 
 * Added: CHANGELOG link to package settings menu
 * Changed: Toggle sidebar in vintage/vintageous with ,d is now enabled by default
