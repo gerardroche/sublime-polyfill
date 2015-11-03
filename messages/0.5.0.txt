@@ -1,5 +1,0 @@
-# polyfill 0.5.0 changelog
-
-* Fixed several ctrl+alt+{n} set layout keymap issues
-  - Move active view into the new group of the new layout on ctrl+alt+{n} keymaps
-  - Don't change focus when layout doesn't change on ctrl+alt+{n} keymaps

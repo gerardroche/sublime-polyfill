@@ -1,3 +1,0 @@
-# polyfill 0.2.0 changelog
-
-* Renamed plugin from sublime-tweaks to sublime-polyfill

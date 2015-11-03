@@ -1,3 +1,0 @@
-# polyfill 0.3.1 changelog
-
-* "Toggle Save on Focus Lost" should persist

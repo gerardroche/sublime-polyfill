@@ -4,6 +4,7 @@
 
 * Added: CHANGELOG link to package settings menu
 * Changed: Toggle sidebar in vintage/vintageous with ,d is now enabled by default
+* Removed: package control messages; it takes too much time to maintain these, see CHANGELOG
 
 ## 0.6.0
 
