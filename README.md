@@ -47,52 +47,63 @@ A plugin for Sublime Text. Inspired by [scrooloose/nerdtree](https://github.com/
 
 ## Key Bindings
 
-**Tree View**
+### Tree View
 
-* `,d` toggle sidebar **(vi_tree_view_toggle mode)**
-* `a` add file **(experimental feature)**
-* `A` add folder **(experimental feature)**
-* `ctrl+\` reveal active file
-* `d` duplicate **(experimental feature)**
-* `f` find in files **(experimental feature)**
-* `h` close node / go to parent node
-* `i` open in split **(experimental feature)** *(not implemented yet)* #1
-* `j` down
-* `J` go to last child
-* `k` up
-* `l` open node
-* `m` or `f2` move/rename **(experimental feature)**
-* `p` go to parent node
-* `P` go to root node
-* `q` close
-* `s` open in vsplit **(experimental feature)** *(not implemented yet)* #1
-* `t` open in tab **(experimental feature)** *(not implemented yet)* #1
+Key | Description
+--- | -----------
+`j` | down
+`k` | up
+`ctrl+\` | reveal active file
+`q` | close sidebar
+`,d` | toggle sidebar in *vintage/vintageous*
+`h` | close node / go to parent node
+`l` | open node
+`p` | go to parent node
+`P` | go to root node
+`J` | go to last child
 
-**Overlay**
+*The following tree view keymaps are not enabled by default. Set `polyfill.experimental_features` to true to enable them. See the configuration section for more details.*
 
-* `ctrl+i` open in split **(experimental feature)** *(not implemented yet)* #2
-* `ctrl+j` down
-* `ctrl+k` up
-* `ctrl+s` open in vsplit **(experimental feature)** *(not implemented yet)* #2
-* `ctrl+t` open in tab **(experimental feature)** *(not implemented yet)* #2
+Key | Description
+--- | -----------
+`a` | add file
+`A` | add folder
+`d` | duplicate
+`f` | find in files
+`m` or `f2` | move/rename
+`i` | open in split *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+`s` | open in vsplit *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+`t` | open in tab *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
 
-**Autocomplete popup**
+### Overlay
 
-* `ctrl+n` or `ctrl+j` next / down
-* `ctrl+p` or `ctrl+k` previous / up
+Key | Description
+--- | -----------
+`ctrl+j` | down
+`ctrl+k` | up
+`ctrl+i` | open in split *(not implemented yet)* [#2](https://github.com/gerardroche/sublime-polyfill/issues/2)
+`ctrl+s` | open in vsplit *(not implemented yet)* [#2](https://github.com/gerardroche/sublime-polyfill/issues/2)
+`ctrl+t` | open in tab *(not implemented yet)* [#2](https://github.com/gerardroche/sublime-polyfill/issues/2)
+
+### Autocomplete popup
+
+Key | Description
+--- | -----------
+`ctrl+j` or `ctrl+n` | down / next
+`ctrl+k` or `ctrl+p` | up / previous
 
 ## Configuration
 
 `polyfill.experimental_features` `<bool>` Default is false
 
-`polyfill.vi_tree_view_toggle` `<bool>` Default is false
+`polyfill.vi_tree_view_toggle` `<bool>` Default is true
 
 ## Installation
 
 **Dependencies**
 
-* Sublime Text `>=3095`
-* [SidebarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements) `>=st3#a307090`
+* Sublime Text `>=3083`
+* Some features only work with [SidebarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements) `>=st3#a307090`
 * Some features only work with [Vintageous](https://packagecontrol.io/packages/Vintageous) `^4.0.3`
 
 ### Package Control installation
