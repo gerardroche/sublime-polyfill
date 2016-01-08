@@ -22,7 +22,8 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
         if index == -1:
             return
 
-        index = self.recent_workspaces.index(self.recent_workspaces_that_really_exist[index])
+        picked = self.recent_workspaces_that_really_exist[index];
+        index = self.recent_workspaces.index(picked)
 
         self.window.run_command('open_recent_project_or_workspace', {'index': index})
 

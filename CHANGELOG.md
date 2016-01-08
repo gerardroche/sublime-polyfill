@@ -1,5 +1,9 @@
 # gerardroche/sublime-polyfill changelog
 
+## 0.7.1
+
+* Fixed: Open recent project command was sometimes opening the wrong project
+
 ## 0.7.0
 
 * Added: CHANGELOG link to package settings menu
