@@ -81,9 +81,9 @@ Key | Description
 --- | -----------
 `ctrl+j` | down
 `ctrl+k` | up
-`ctrl+i` | open in split *(not implemented yet)* [#2](https://github.com/gerardroche/sublime-polyfill/issues/2)
-`ctrl+s` | open in vsplit *(not implemented yet)* [#2](https://github.com/gerardroche/sublime-polyfill/issues/2)
-`ctrl+t` | open in tab *(not implemented yet)* [#2](https://github.com/gerardroche/sublime-polyfill/issues/2)
+`ctrl+i` | open in split (requires [Origami], see [Installation](#dependencies))
+`ctrl+s` | open in vsplit (requires [Origami], see [Installation](#dependencies))
+`ctrl+t` | open in tab
 
 ### Autocomplete popup
 
@@ -94,17 +94,37 @@ Key | Description
 
 ## Configuration
 
-`polyfill.experimental_features` `<bool>` Default is false
+Some features are considered experimental and require the "experimental_features" settings to be enabled.
 
-`polyfill.vi_tree_view_toggle` `<bool>` Default is true
+### Settings
+
+**polyfill.experimental_features**
+
+Enable/disable features considuered experimental.
+
+Type: `<bool>`
+
+Default: `false`
+
+
+**polyfill.vi_tree_view_toggle**
+
+Type: <bool>`
+
+Default: true
+
+Enable/disable the vi tree view toggle feature.
 
 ## Installation
 
-**Dependencies**
+### Dependencies
 
-* Sublime Text `>=3083`
-* Some features only work with [SidebarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements) `>=st3#a307090`
-* Some features only work with [Vintageous](https://packagecontrol.io/packages/Vintageous) `^4.0.3`
+* Requires Sublime Text `>=3083`.
+* Some features require [SidebarEnhancements] `>=st3#a307090`.
+* Some features require [Vintageous] `~4.0`.
+* Some features require [Origami].
+
+Some features are considered experimental and require the "experimental_features" settings to be enabled. These features are disabled by default. See [Configurations](#configuration) for more details.
 
 ### Package Control installation
 
@@ -136,3 +156,7 @@ See [CHANGELOG.md](CHANGELOG.md).
 ## License
 
 Released under the [BSD 3-Clause License](LICENSE).
+
+[Origami]: https://github.com/SublimeText/Origami
+[SidebarEnhancements]: https://packagecontrol.io/packages/SideBarEnhancements
+[Vintageous]: https://packagecontrol.io/packages/Vintageous
