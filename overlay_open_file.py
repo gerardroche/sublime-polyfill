@@ -45,14 +45,13 @@ class OverlayOpenFileCommand(sublime_plugin.WindowCommand):
             return bool(view.settings().get('polyfill.experimental_features'))
         return False
 
-    # @todo open overlay view file in vertical split #2
     def open_file_in_vertical_split(self, fname):
         self.window.open_file(fname)
+        self.window.run_command('create_pane_with_file', {'direction': 'right'})
 
-    # @todo open overlay view file in horizontal split #2
     def open_file_in_horizontal_split(self, fname):
         self.window.open_file(fname)
+        self.window.run_command('create_pane_with_file', {'direction': 'down'})
 
-    # @todo open overlay view file in tab #2
     def open_file_in_tab(self, fname):
         self.window.open_file(fname)

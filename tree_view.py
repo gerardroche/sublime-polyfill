@@ -224,6 +224,8 @@ class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
         Defaults to opening in a new tab.
         """
 
+        # @todo open tree view file in tab #1
+
         transient_view = self.window.transient_view_in_group(self.window.active_group())
         if not transient_view:
             return
@@ -244,15 +246,14 @@ class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
     def is_enabled(self):
         return self.experimental_features_enabled()
 
-    # @todo open tree view file in vertical split #1
     def open_file_in_vertical_split(self, fname):
         self.window.open_file(fname)
+        self.window.run_command('create_pane_with_file', {'direction': 'right'})
 
-    # @todo open tree view file in horizontal split #1
     def open_file_in_horizontal_split(self, fname):
         self.window.open_file(fname)
+        self.window.run_command('create_pane_with_file', {'direction': 'down'})
 
-    # @todo open tree view file in tab #1
     def open_file_in_tab(self, fname):
         self.window.open_file(fname)
 

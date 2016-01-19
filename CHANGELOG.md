@@ -1,5 +1,11 @@
 # gerardroche/sublime-polyfill changelog
 
+## 0.8.0-dev
+
+* Added: #2 open file from overlay in split with ctrl+s (requires Origami package)
+* Added: #2 open file from overlay in vertical split with ctrl+v (requires Origami package)
+* Added: #2 open file from overlay in tab with ctrl+t
+
 ## 0.7.1
 
 * Fixed: Open recent project command was sometimes opening the wrong project
