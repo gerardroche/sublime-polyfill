@@ -1,6 +1,6 @@
 # gerardroche/sublime-polyfill changelog
 
-## 0.8.0-dev
+## 0.8.0
 
 * Added: #2 open file from overlay in split with ctrl+s (requires Origami package)
 * Added: #2 open file from overlay in vertical split with ctrl+v (requires Origami package)
