@@ -1,8 +1,6 @@
 # gerardroche/sublime-polyfill
 
-A plugin for Sublime Text. Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
-
-**Sublime Text 3 only**
+A plugin for Sublime Text 3. Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
 ## Overview
 
