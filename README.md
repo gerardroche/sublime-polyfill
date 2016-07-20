@@ -9,7 +9,7 @@
 [![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?maxAge=2592000?style=flat&label=release)](https://github.com/gerardroche/sublime-polyfill/tags)
 [![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?maxAge=2592000?style=flat)](https://packagecontrol.io/packages/polyfill)
 
-A plugin for Sublime Text.
+Tweaks and fixes for Sublime Text.
 
 Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
