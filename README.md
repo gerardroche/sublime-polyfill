@@ -1,6 +1,17 @@
 # gerardroche/sublime-polyfill
 
-A plugin for Sublime Text 3. Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
+[![Author](http://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat)](https://twitter.com/gerardroche)
+[![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/gerardroche/sublime-polyfill)
+[![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat)](https://github.com/gerardroche/sublime-polyfill/stargazers)
+[![License](https://img.shields.io/badge/license-BSD--3-blue.svg?style=flat)](https://raw.githubusercontent.com/gerardroche/sublime-polyfill/master/LICENSE)
+
+[![Sublime version](https://img.shields.io/badge/sublime-v3-lightgrey.svg?style=flat)](http://sublimetext.com)
+[![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?maxAge=2592000?style=flat&label=release)](https://github.com/gerardroche/sublime-polyfill/tags)
+[![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?maxAge=2592000?style=flat)](https://packagecontrol.io/packages/polyfill)
+
+A plugin for Sublime Text.
+
+Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
 ## Overview
 
