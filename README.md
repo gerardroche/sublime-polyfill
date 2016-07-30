@@ -1,13 +1,13 @@
 # gerardroche/sublime-polyfill
 
-[![Author](http://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat)](https://twitter.com/gerardroche)
+[![Author](https://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat)](https://twitter.com/gerardroche)
 [![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/gerardroche/sublime-polyfill)
 [![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat)](https://github.com/gerardroche/sublime-polyfill/stargazers)
 [![License](https://img.shields.io/badge/license-BSD--3-blue.svg?style=flat)](https://raw.githubusercontent.com/gerardroche/sublime-polyfill/master/LICENSE)
 
 [![Sublime version](https://img.shields.io/badge/sublime-v3-lightgrey.svg?style=flat)](http://sublimetext.com)
-[![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?maxAge=2592000?style=flat&label=release)](https://github.com/gerardroche/sublime-polyfill/tags)
-[![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?maxAge=2592000?style=flat)](https://packagecontrol.io/packages/polyfill)
+[![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?label=release&style=flat&maxAge=2592000)](https://github.com/gerardroche/sublime-polyfill/tags)
+[![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?style=flat&maxAge=2592000)](https://packagecontrol.io/packages/polyfill)
 
 Tweaks and fixes for Sublime Text.
 
