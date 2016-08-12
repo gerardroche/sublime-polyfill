@@ -1,4 +1,4 @@
-# gerardroche/sublime-polyfill
+# polyfill
 
 [![Author](https://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat)](https://twitter.com/gerardroche)
 [![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/gerardroche/sublime-polyfill)
@@ -137,13 +137,7 @@ Some features are considered experimental and require the "experimental_features
 
 ### Package Control installation
 
-The preferred method of installation is via Package Control.
-
-1. Install [Package Control](https://packagecontrol.io).
-2. From inside Sublime Text, open Package Control's Command Pallet: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows, Linux) or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac.
-3. Type `install package` and hit Return. A list of available packages will be displayed.
-4. Type `polyfill` and hit Return. The package will be downloaded to the appropriate directory.
-5. Restart Sublime Text to complete installation. The features listed above should now be available.
+The preferred method of installation is via [Package Control].
 
 ### Manual installation
 
@@ -166,6 +160,7 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 Released under the [BSD 3-Clause License](LICENSE).
 
+[Package Control]: https://packagecontrol.io/browse/authors/gerardroche
 [Origami]: https://github.com/SublimeText/Origami
 [SidebarEnhancements]: https://packagecontrol.io/packages/SideBarEnhancements
 [Vintageous]: https://packagecontrol.io/packages/Vintageous
