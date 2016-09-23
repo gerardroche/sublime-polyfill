@@ -1,5 +1,9 @@
 # gerardroche/sublime-polyfill changelog
 
+## 1.0.0
+
+* Updated README for 1.0.0 release
+
 ## 0.8.0
 
 * Added: #2 open file from overlay in split with ctrl+s (requires Origami package)
