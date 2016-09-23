@@ -46,7 +46,7 @@ Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [k
 * `Project: Open`
 * `Project: Switch`
 * `Sort User Settings`
-* `Toggle Indent Guides`
+* `Toggle Indent Guide`
 * `Toggle Invisibles`
 * `Toggle Line Numbers`
 * `Toggle Preview on Click`
@@ -107,22 +107,32 @@ Some features are considered experimental and require the "experimental_features
 
 ### Settings
 
-**polyfill.experimental_features**
+Key | Description | Type | Default
+----|-------------|------|--------
+`polyfill.experimental_features` | Enable experimental features. | `boolean` | `false`
+`polyfill.vi_tree_view_toggle` | Enable vi tree view toggle. | `boolean` | `true`
 
-Enable/disable features considuered experimental.
+#### User Settings
 
-Type: `<bool>`
+`Preferences > Settings - User`
 
-Default: `false`
+```json
+{
+    "polyfill.{Key}": "{Value}"
+}
+```
 
+#### Per-Project Settings
 
-**polyfill.vi_tree_view_toggle**
+`Project > Edit Project`
 
-Type: <bool>`
-
-Default: true
-
-Enable/disable the vi tree view toggle feature.
+```json
+{
+    "settings": {
+        "polyfill.{Key}": "{Value}"
+    }
+}
+```
 
 ## Installation
 
@@ -146,7 +156,7 @@ The preferred method of installation is via [Package Control].
     * Linux: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/.config/sublime-text-3/Packages/polyfill`
     * OS X: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/polyfill`
     * Windows: `git clone https://github.com/gerardroche/sublime-polyfill.git %APPDATA%\Sublime/ Text/ 3/Packages/polyfill`
-3. Restart Sublime Text to complete installation. The features listed above should now be available.
+3. Done!
 
 ## Contributing
 
