@@ -24,12 +24,12 @@
         "command": "exit"
     },
     {
-        "caption": "Project: Open",
-        "command": "prompt_open_project_or_workspace"
-    },
-    {
         "caption": "Project: Open Recent",
         "command": "prompt_open_recent_project"
+    },
+    {
+        "caption": "Project: Open",
+        "command": "prompt_open_project_or_workspace"
     },
     {
         "caption": "Project: Switch",
