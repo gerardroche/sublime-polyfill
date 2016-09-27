@@ -1,6 +1,13 @@
 import sublime
 import sublime_plugin
 
+class ToggleUserSettingCommand(sublime_plugin.ApplicationCommand):
+
+    def run(self, key):
+        settings = sublime.load_settings('Preferences.sublime-settings')
+        settings = settings.set(key, not bool(settings.get(key, False)))
+        sublime.save_settings('Preferences.sublime-settings')
+
 class ToggleCommand(sublime_plugin.WindowCommand):
 
     def run(self):
