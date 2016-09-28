@@ -1,7 +1,8 @@
-import sublime
-import sublime_plugin
 import os
 import json
+
+import sublime
+import sublime_plugin
 
 class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
 
