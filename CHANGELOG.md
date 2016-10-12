@@ -1,8 +1,13 @@
 # gerardroche/sublime-polyfill changelog
 
+## Unreleased
+
+* Added: "Application: Enable Theme" command
+* Added: "Application: Enable Color Scheme" command
+
 ## 1.0.0
 
-* Updated README for 1.0.0 release
+* Updated: README for 1.0.0 release
 
 ## 0.8.0
 

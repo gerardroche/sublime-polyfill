@@ -4,6 +4,14 @@
         "command": "close_window"
     },
     {
+        "caption": "Application: Enable Color Scheme",
+        "command": "enable_color_scheme"
+    },
+    {
+        "caption": "Application: Enable Theme",
+        "command": "enable_theme"
+    },
+    {
         "caption": "Application: New File",
         "command": "new_file"
     },
