@@ -1,19 +1,10 @@
-# polyfill
+# WHAT POLYFILL IS
 
-[![Author](https://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat)](https://twitter.com/gerardroche)
-[![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/gerardroche/sublime-polyfill)
-[![License](https://img.shields.io/badge/license-BSD--3-blue.svg?style=flat)](https://raw.githubusercontent.com/gerardroche/sublime-polyfill/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat)](https://github.com/gerardroche/sublime-polyfill/stargazers)
+[![Author](https://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat-square)](https://twitter.com/gerardroche) [![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg?style=flat-square)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill/stargazers) [![Sublime version](https://img.shields.io/badge/sublime-v3.0.0-green.svg?style=flat-square)](https://sublimetext.com) [![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?label=release&style=flat-square&maxAge=86400)](https://github.com/gerardroche/sublime-polyfill/tags) [![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?style=flat-square&maxAge=86400)](https://packagecontrol.io/packages/polyfill)
 
-[![Sublime version](https://img.shields.io/badge/sublime-v3-lightgrey.svg?style=flat)](https://sublimetext.com)
-[![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?label=release&style=flat&maxAge=2592000)](https://github.com/gerardroche/sublime-polyfill/tags)
-[![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?style=flat&maxAge=2592000)](https://packagecontrol.io/packages/polyfill)
+POLYFILL is a collection of fixes, commands, and other features for Sublime Text. It is inspired by Vim plugins such as [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
-Tweaks and fixes for Sublime Text.
-
-Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
-
-## Overview
+## OVERVIEW
 
 * [Features](#features)
 * [Commands](#commands)
@@ -24,7 +15,7 @@ Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [k
 * [Changelog](#changelog)
 * [License](#license)
 
-## Features
+## FEATURES
 
 * Navigate sidebar with `j` and `k`
 * Navigate sidebar nodes with go to parent node `p`, root `P`, last `J`, and more
@@ -34,9 +25,11 @@ Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [k
 * Toggle indent guides command, and line numbers, rulers, invisibles, and more
 * Open recent project command, Sort user settings command, and more
 
-## Commands
+## COMMANDS
 
 * `Application: Close Window`
+* `Application: Enable Color Scheme`
+* `Application: Enable Theme`
 * `Application: New File`
 * `Application: New Window`
 * `Application: Open File`
@@ -54,7 +47,7 @@ Inspired by [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [k
 * `Toggle Save on Lost Focus`
 * `View: Groups: Move File to New Group`
 
-## Key Bindings
+## KEY BINDINGS
 
 ### Tree View
 
@@ -101,7 +94,7 @@ Key | Description
 `ctrl+j` or `ctrl+n` | down / next
 `ctrl+k` or `ctrl+p` | up / previous
 
-## Configuration
+## CONFIGURATION
 
 Some features are considered experimental and require the "experimental_features" settings to be enabled.
 
@@ -134,39 +127,36 @@ Key | Description | Type | Default
 }
 ```
 
-## Installation
+## INSTALLATION
 
-### Dependencies
+Some features are considered experimental and require the "experimental_features" settings to be enabled. These features are disabled by default. See [Configurations](#configuration) for more details.
 
-* Requires Sublime Text `>=3083`.
 * Some features require [SidebarEnhancements] `>=st3#a307090`.
 * Some features require [Vintageous] `~4.0`.
 * Some features require [Origami].
 
-Some features are considered experimental and require the "experimental_features" settings to be enabled. These features are disabled by default. See [Configurations](#configuration) for more details.
+### Package Control
 
-### Package Control installation
+The preferred method of installation is [Package Control].
 
-The preferred method of installation is via [Package Control].
-
-### Manual installation
+### Manual
 
 1. Close Sublime Text.
-2. Download or clone this repository to a directory named `polyfill` in the Sublime Text Packages directory for your platform:
+2. Download or clone this repository to a directory named **`polyfill`** in the Sublime Text Packages directory for your platform:
     * Linux: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/.config/sublime-text-3/Packages/polyfill`
     * OS X: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/polyfill`
     * Windows: `git clone https://github.com/gerardroche/sublime-polyfill.git %APPDATA%\Sublime/ Text/ 3/Packages/polyfill`
 3. Done!
 
-## Contributing
+## CONTRIBUTING
 
 Your issue reports and pull requests are always welcome.
 
-## Changelog
+## CHANGELOG
 
 See [CHANGELOG.md](CHANGELOG.md).
 
-## License
+## LICENSE
 
 Released under the [BSD 3-Clause License](LICENSE).
 

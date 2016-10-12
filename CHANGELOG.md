@@ -1,9 +1,10 @@
-# gerardroche/sublime-polyfill changelog
+# POLYFILL
 
-## Unreleased
+## 1.1.0
 
 * Added: "Application: Enable Theme" command
 * Added: "Application: Enable Color Scheme" command
+* Added: "toggle_user_setting <key>" command
 
 ## 1.0.0
 
