@@ -11,7 +11,7 @@ class EnableThemeCommand(sublime_plugin.ApplicationCommand):
             if "Addon" not in theme:
                 self.themes.append(os.path.basename(theme))
 
-        if len(self.themes) > 0:
+        if len(self.themes) > 1:
             sublime.active_window().show_quick_panel(self.themes, self.on_done)
 
     def on_done(self, index):
@@ -34,9 +34,7 @@ class EnableColorSchemeCommand(sublime_plugin.ApplicationCommand):
                 self.color_schemes.append(color_scheme)
 
         if len(self.color_schemes) > 1:
-
             color_scheme = sublime.load_settings('Preferences.sublime-settings').get('color_scheme')
-
             if color_scheme not in self.color_schemes:
                 self.color_schemes.insert(0, color_scheme)
 

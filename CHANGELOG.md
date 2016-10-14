@@ -1,5 +1,9 @@
 # POLYFILL
 
+## Unreleased
+
+* Fixed: Don't show quick panel if only the current theme is available
+
 ## 1.1.0
 
 * Added: "Application: Enable Theme" command
