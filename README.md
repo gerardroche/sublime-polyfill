@@ -53,59 +53,58 @@ POLYFILL is a collection of fixes, commands, and other features for Sublime Text
 
 Key | Description
 --- | -----------
-`j` | down
-`k` | up
-`ctrl+\` | reveal active file
-`q` | close sidebar
-`,d` | toggle sidebar in *vintage/vintageous*
-`h` | close node / go to parent node
-`l` | open node
-`p` | go to parent node
-`P` | go to root node
-`J` | go to last child
+<kbd>j</kbd> | down
+<kbd>k</kbd> | up
+<kbd>ctrl+\</kbd> | reveal active file
+<kbd>q</kbd> | close sidebar
+<kbd>,d</kbd> | toggle sidebar in *vintage/vintageous*
+<kbd>h</kbd> | close node / go to parent node
+<kbd>l</kbd> | open node
+<kbd>p</kbd> | go to parent node
+<kbd>P</kbd> | go to root node
+<kbd>J</kbd> | go to last child
 
 *The following tree view keymaps are not enabled by default. Set `polyfill.experimental_features` to true to enable them. See the configuration section for more details.*
 
 Key | Description
 --- | -----------
-`a` | add file
-`A` | add folder
-`d` | duplicate
-`f` | find in files
-`m` or `f2` | move/rename
-`i` | open in split *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
-`s` | open in vsplit *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
-`t` | open in tab *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+    <kbd>a</kbd> | add file
+    <kbd>A</kbd> | add folder
+    <kbd>d</kbd> | duplicate
+    <kbd>f</kbd> | find in files
+    <kbd>m</kbd> or <kbd>f2</kbd> | move/rename
+    <kbd>i</kbd> | open in split *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+    <kbd>s</kbd> | open in vsplit *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+    <kbd>t</kbd> | open in tab *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
 
 ### Overlay
 
 Key | Description
 --- | -----------
-`ctrl+j` | down
-`ctrl+k` | up
-`ctrl+i` | open in split (requires [Origami], see [Installation](#dependencies))
-`ctrl+s` | open in vsplit (requires [Origami], see [Installation](#dependencies))
-`ctrl+t` | open in tab
+    <kbd>ctrl+j</kbd> | down
+    <kbd>ctrl+k</kbd> | up
+    <kbd>ctrl+i</kbd> | open in split (requires [Origami], see [Installation](#dependencies))
+    <kbd>ctrl+s</kbd> | open in vsplit (requires [Origami], see [Installation](#dependencies))
+    <kbd>ctrl+t</kbd> | open in tab
 
 ### Autocomplete popup
 
 Key | Description
 --- | -----------
-`ctrl+j` or `ctrl+n` | down / next
-`ctrl+k` or `ctrl+p` | up / previous
+    <kbd>ctrl+j</kbd> or <kbd>ctrl+n</kbd> | down / next
+    <kbd>ctrl+k</kbd> or <kbd>ctrl+p</kbd> | up / previous
 
 ## CONFIGURATION
 
 Some features are considered experimental and require the "experimental_features" settings to be enabled.
 
-### Settings
-
 Key | Description | Type | Default
 ----|-------------|------|--------
 `polyfill.experimental_features` | Enable experimental features. | `boolean` | `false`
+`polyfill.keymaps` | Disable the default keymaps. | `boolean` | `true`
 `polyfill.vi_tree_view_toggle` | Enable vi tree view toggle. | `boolean` | `true`
 
-#### User Settings
+### User Settings
 
 `Preferences > Settings - User`
 
@@ -115,7 +114,7 @@ Key | Description | Type | Default
 }
 ```
 
-#### Per-Project Settings
+### Per-Project Settings
 
 `Project > Edit Project`
 

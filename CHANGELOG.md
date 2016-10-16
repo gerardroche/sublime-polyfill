@@ -1,8 +1,9 @@
 # POLYFILL
 
-## Unreleased
+## 1.2.0
 
 * Fixed: Don't show quick panel if only the current theme is available
+* Added: Keymap for opening recent projects <kbd>Super+Alt+R</kbd> (OSX) <kbd>Ctrl+Alt+R</kbd> (Windows, Linux)
 
 ## 1.1.0
 
