@@ -1,6 +1,6 @@
 # WHAT POLYFILL IS
 
-[![Author](https://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat-square)](https://twitter.com/gerardroche) [![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg?style=flat-square)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill/stargazers) [![Sublime version](https://img.shields.io/badge/sublime-v3.0.0-green.svg?style=flat-square)](https://sublimetext.com) [![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?label=release&style=flat-square&maxAge=86400)](https://github.com/gerardroche/sublime-polyfill/tags) [![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?style=flat-square&maxAge=86400)](https://packagecontrol.io/packages/polyfill)
+[![Author](https://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat-square)](https://twitter.com/gerardroche) [![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg?style=flat-square)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill/stargazers) [![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?label=release&style=flat-square&maxAge=86400)](https://github.com/gerardroche/sublime-polyfill/tags)  [![Sublime version](https://img.shields.io/badge/sublime-v3.0.0-green.svg?style=flat-square)](https://sublimetext.com) [![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?style=flat-square&maxAge=86400)](https://packagecontrol.io/packages/polyfill)
 
 POLYFILL is a collection of fixes, commands, and other features for Sublime Text. It is inspired by Vim plugins such as [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
@@ -17,8 +17,8 @@ POLYFILL is a collection of fixes, commands, and other features for Sublime Text
 
 ## FEATURES
 
-* Navigate sidebar with `j` and `k`
-* Navigate sidebar nodes with go to parent node `p`, root `P`, last `J`, and more
+* Navigate sidebar (tree view) with `j` and `k`
+* Navigate sidebar (tree view) nodes with go to parent node `p`, root `P`, last `J`, and more
 * Navigate overlays and popups with `ctrl+j` and `ctrl+k`
 * Navigate autocomplete popup with `ctrl+n` and `ctrl+p`
 * Toggle sidebar with `,d` when using *Vintage/Vintageous*
