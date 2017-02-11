@@ -27,6 +27,7 @@ POLYFILL is a collection of fixes, commands, and other features for Sublime Text
 
 ## COMMANDS
 
+* `Application: Clear Window`
 * `Application: Close Window`
 * `Application: Enable Color Scheme`
 * `Application: Enable Theme`
@@ -35,6 +36,7 @@ POLYFILL is a collection of fixes, commands, and other features for Sublime Text
 * `Application: Open File`
 * `Application: Open Folder`
 * `Application: Quit`
+* `Application: Reset Window`
 * `Project: Open Recent`
 * `Project: Open`
 * `Project: Switch`

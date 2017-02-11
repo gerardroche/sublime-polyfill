@@ -1,5 +1,9 @@
 [
     {
+        "caption": "Application: Clear Window",
+        "command": "clear_window"
+    },
+    {
         "caption": "Application: Close Window",
         "command": "close_window"
     },
@@ -30,6 +34,10 @@
     {
         "caption": "Application: Quit",
         "command": "exit"
+    },
+    {
+        "caption": "Application: Reset Window",
+        "command": "reset_window"
     },
     {
         "caption": "Project: Open Recent",

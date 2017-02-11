@@ -1,6 +1,9 @@
 # POLYFILL CHANGELOG
 
-** Added: Resize Groups Almost Equally command
+## 1.4.0
+
+* Added: Resize Groups Almost Equally command
+* Added: Clear Window and Reset Window commands
 
 ## 1.3.0
 
