@@ -1,12 +1,8 @@
 import sublime_plugin
 
+
 class OverlayOpenFileCommand(sublime_plugin.WindowCommand):
-
-    """
-    Open File
-
-    Inspired by Vim CtrlP https://kien.github.io/ctrlp.vim/
-    """
+    """Open File; Inspired by Vim CtrlP https://kien.github.io/ctrlp.vim"""
 
     def run(self, tab = None, split = None, vsplit = None):
         """

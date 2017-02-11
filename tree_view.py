@@ -1,11 +1,11 @@
+# Inspired By:
+# * Vim CtrlP: https://kien.github.io/ctrlp.vim/
+# * Vim NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
+# See also hjkl navigation http://stackoverflow.com/a/17573049
+
 import sublime
 import sublime_plugin
 
-# Inspired By
-#
-# Vim CtrlP: https://kien.github.io/ctrlp.vim/
-# Vim NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
-# See also hjkl navigation http://stackoverflow.com/a/17573049
 
 class TreeView():
 
@@ -17,17 +17,14 @@ class TreeView():
         sublime.save_settings('Preferences.sublime-settings')
 
     def wibble_wobble(self):
-
         # Workaround ST API
         #
         # * Helps scroll active file into view
         # * Helps shakes off previous sidebar (highlighted) cursor position
-
         self.window.run_command('move', { 'by': 'lines', 'forward': True })
         self.window.run_command('move', { 'by': 'lines', 'forward': False })
 
     def ensure_file_under_cursor_is_open(self):
-
         preferences = self.load_preferences()
         self.preview_on_click = preferences.get('preview_on_click')
 
@@ -47,7 +44,6 @@ class TreeView():
                 view.close()
 
     def run_command_for_file_under_cursor(self, command):
-
         # There is no api to get a name of a file under the cursor in the
         # sidebar.
         #
@@ -67,7 +63,6 @@ class TreeView():
         # **Known Issues**
         #
         # Doesn't work if the file under cursor is a folder so don't do that.
-
         self.ensure_file_under_cursor_is_open()
         self.window.run_command(command)
         self.ensure_file_under_cursor_is_open_cleanup()
@@ -78,11 +73,8 @@ class TreeView():
             return bool(view.settings().get('polyfill.experimental_features'))
         return False
 
-class TreeViewAddFileCommand(TreeView, sublime_plugin.WindowCommand):
 
-    """
-    Add File
-    """
+class TreeViewAddFileCommand(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_new_file')
@@ -90,11 +82,8 @@ class TreeViewAddFileCommand(TreeView, sublime_plugin.WindowCommand):
     def is_enabled(self):
         return self.experimental_features_enabled()
 
-class TreeViewAddFolderCommand(TreeView, sublime_plugin.WindowCommand):
 
-    """
-    Add Folder
-    """
+class TreeViewAddFolderCommand(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_new_directory')
@@ -102,11 +91,8 @@ class TreeViewAddFolderCommand(TreeView, sublime_plugin.WindowCommand):
     def is_enabled(self):
         return self.experimental_features_enabled()
 
-class TreeViewDuplicateCommand(TreeView, sublime_plugin.WindowCommand):
 
-    """
-    Duplicate
-    """
+class TreeViewDuplicateCommand(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_duplicate')
@@ -114,53 +100,36 @@ class TreeViewDuplicateCommand(TreeView, sublime_plugin.WindowCommand):
     def is_enabled(self):
         return self.experimental_features_enabled()
 
+
 class TreeViewFinder(TreeView, sublime_plugin.WindowCommand):
 
-    """
-    Find
-    """
-
     def run(self):
-
         # TODO can the current file directory be prefilled? #3
-
         self.window.run_command('show_panel', { 'panel': 'find_in_files' } )
 
     def is_enabled(self):
         return self.experimental_features_enabled()
 
-class TreeViewGoToParentNode(TreeView, sublime_plugin.WindowCommand):
 
-    """"
-    Move to parent node
-    """
+class TreeViewGoToParentNode(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command('move_to', {'to': 'bol', 'extend': False})
 
-class TreeViewGoToRootNode(TreeView, sublime_plugin.WindowCommand):
 
-    """"
-    Move to root node
-    """
+class TreeViewGoToRootNode(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'characters', 'forward': False})
 
-class TreeViewGoToChildNode(TreeView, sublime_plugin.WindowCommand):
 
-    """"
-    Move to child node
-    """
+class TreeViewGoToChildNode(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command('move_to', {'to': 'eol', 'extend': False})
 
-class TreeViewMoveCommand(TreeView, sublime_plugin.WindowCommand):
 
-    """
-    Move
-    """
+class TreeViewMoveCommand(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_rename')
@@ -168,49 +137,33 @@ class TreeViewMoveCommand(TreeView, sublime_plugin.WindowCommand):
     def is_enabled(self):
         return self.experimental_features_enabled()
 
-class TreeViewMoveDown(TreeView, sublime_plugin.WindowCommand):
 
-    """"
-    Move down
-    """
+class TreeViewMoveDown(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'lines', 'forward': True})
 
-class TreeViewMoveLeft(TreeView, sublime_plugin.WindowCommand):
 
-    """"
-    Move left
-    """
+class TreeViewMoveLeft(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'characters', 'forward': False})
 
-class TreeViewMoveRight(TreeView, sublime_plugin.WindowCommand):
 
-    """"
-    Move right
-    """
+class TreeViewMoveRight(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'characters', 'forward': True})
 
-class TreeViewMoveUp(TreeView, sublime_plugin.WindowCommand):
 
-    """"
-    Move up
-    """
+class TreeViewMoveUp(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'lines', 'forward': False})
 
+
 class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
-
-    """
-    Open File
-
-    Inspired by Vim CtrlP https://kien.github.io/ctrlp.vim/
-    """
+    """Inspired by Vim CtrlP https://kien.github.io/ctrlp.vim/"""
 
     def run(self, tab = None, split = None, vsplit = None):
         """
@@ -257,31 +210,22 @@ class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
     def open_file_in_tab(self, fname):
         self.window.open_file(fname)
 
+
 class TreeViewRevealActiveFile(TreeView, sublime_plugin.WindowCommand):
 
-    """
-    Reveal Active File
-    """
-
     def run(self):
-
-        # Try to workaround ST issues
-        #
+        # Try to workaround ST issues:
         # * should scroll into view if active file is not visible
         # * should focus on sidebar
         # * should highlight active file position
         # * should remove any visual artifacts from previous position
         # * navigation after reveal should begin from active file
-
         self.window.run_command('reveal_in_side_bar')
         self.wibble_wobble()
         self.window.run_command('focus_side_bar')
 
-class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
 
-    """
-    Toggle
-    """
+class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
 
     def run(self, sidebar_currently_focused):
         """
@@ -292,7 +236,6 @@ class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
         self.window.run_command('toggle_side_bar')
 
         if sidebar_currently_focused:
-
             # Ensure focus returns to active view or transient view in group
             self.window.focus_group(self.window.active_group())
 
@@ -302,7 +245,6 @@ class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
                 view.run_command('_enter_normal_mode')
 
         else:
-
             # _Note_: "focus_sidebar_bar" command won't actually do anything
             # if the sidebar is not actually currently focused. Also, focus
             # is always returned to the view after the "focus_side_bar"

@@ -1,12 +1,14 @@
 import sublime
 import sublime_plugin
 
+
 class ToggleUserSettingCommand(sublime_plugin.ApplicationCommand):
 
     def run(self, key):
         settings = sublime.load_settings('Preferences.sublime-settings')
         settings = settings.set(key, not bool(settings.get(key, False)))
         sublime.save_settings('Preferences.sublime-settings')
+
 
 class ToggleCommand(sublime_plugin.WindowCommand):
 
@@ -43,7 +45,9 @@ class ToggleCommand(sublime_plugin.WindowCommand):
     def setting_enabled_value(self):
         return True
 
+
 class ToggleIndentGuideCommand(ToggleCommand):
+
     def setting_name(self):
         return 'indent_guide_options'
 
@@ -56,7 +60,9 @@ class ToggleIndentGuideCommand(ToggleCommand):
     def setting_enabled_value(self):
         return ['draw_normal', 'draw_active']
 
+
 class ToggleInvisiblesCommand(ToggleCommand):
+
     def setting_name(self):
         return 'draw_white_space'
 
@@ -66,20 +72,25 @@ class ToggleInvisiblesCommand(ToggleCommand):
     def setting_enabled_value(self):
         return 'all'
 
+
 class ToggleLineNumbersCommand(ToggleCommand):
     pass
+
 
 class TogglePreviewOnClickCommand(ToggleCommand):
 
     def setting_description(self):
         return 'Preview on Click'
 
+
 class ToggleRulersCommand(ToggleCommand):
+
     def setting_disabled_value(self):
         return []
 
     def setting_enabled_value(self):
         return [80, 120]
+
 
 class ToggleSaveOnFocusLostCommand(ToggleCommand):
     pass

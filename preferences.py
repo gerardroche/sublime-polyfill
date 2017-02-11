@@ -1,6 +1,9 @@
+import os
+
+
 import sublime
 import sublime_plugin
-import os
+
 
 class EnableThemeCommand(sublime_plugin.ApplicationCommand):
 
@@ -23,6 +26,7 @@ class EnableThemeCommand(sublime_plugin.ApplicationCommand):
         settings = sublime.load_settings('Preferences.sublime-settings')
         settings.set('theme', theme)
         sublime.save_settings('Preferences.sublime-settings')
+
 
 class EnableColorSchemeCommand(sublime_plugin.ApplicationCommand):
 

@@ -1,9 +1,9 @@
 import sublime_plugin
 
+
 class PolyfillSetLayoutCommand(sublime_plugin.WindowCommand):
 
     def run(self, cols, rows, cells):
-
         num_groups_before = self.window.num_groups()
         active_group_before = self.window.active_group()
 
@@ -14,8 +14,7 @@ class PolyfillSetLayoutCommand(sublime_plugin.WindowCommand):
         })
 
         if num_groups_before == self.window.num_groups():
-            # Fix issue where group focus moves when it probably shouldn't
-            #
+            # Fix issue where group focus moves when it probably shouldn't.
             # When the layout is not changed then the focus shouldn't change
             # either. Previously, if the active view before the layout change
             # is transient ST would move the cursor focus to a group with a

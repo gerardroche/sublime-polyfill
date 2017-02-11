@@ -1,8 +1,10 @@
 import os
 import json
 
+
 import sublime
 import sublime_plugin
+
 
 class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
 
@@ -29,9 +31,7 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
         self.window.run_command('open_recent_project_or_workspace', {'index': index})
 
     def get_recent_workspaces(self):
-        """
-        Returns an list > 0; otherwise None
-        """
+        """Returns an list > 0; otherwise None"""
 
         session = self.load_session()
         if not session:
@@ -60,9 +60,7 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
         return None
 
     def load_session(self):
-        """
-        Returns dict or None if no session exists
-        """
+        """Returns dict or None if no session exists"""
 
         local_session_path = os.path.join(os.path.dirname(sublime.packages_path()), 'Local')
         local_auto_save_session_file = os.path.join(local_session_path, 'Auto Save Session.sublime_session')

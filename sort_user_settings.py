@@ -1,6 +1,7 @@
 import sublime
 import sublime_plugin
 
+
 class SortUserSettingsCommand(sublime_plugin.WindowCommand):
 
     def run(self):
