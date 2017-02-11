@@ -12,6 +12,11 @@ class SortUserSettingsCommand(sublime_plugin.WindowCommand):
         ignored_packages.sort()
         settings.set('ignored_packages', ignored_packages)
 
+        # ignored_words
+        ignored_words = settings.get('ignored_words', [])
+        ignored_words.sort()
+        settings.set('ignored_words', ignored_words)
+
         # index_exclude_patterns
         index_exclude_patterns = settings.get('index_exclude_patterns', [])
         index_exclude_patterns.sort()

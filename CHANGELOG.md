@@ -1,4 +1,8 @@
-# POLYFILL
+# POLYFILL CHANGELOG
+
+## 1.3.0
+
+* Added: Sort ignored words when sorting user preferences
 
 ## 1.2.0
 
