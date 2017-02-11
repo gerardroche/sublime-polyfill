@@ -44,6 +44,10 @@
         "command": "prompt_switch_project_or_workspace"
     },
     {
+        "caption": "Resize Groups Almost Equally",
+        "command": "resize_groups_almost_equally"
+    },
+    {
         "caption": "Sort User Settings",
         "command": "sort_user_settings"
     },

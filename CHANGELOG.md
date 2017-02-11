@@ -1,5 +1,7 @@
 # POLYFILL CHANGELOG
 
+** Added: Resize Groups Almost Equally command
+
 ## 1.3.0
 
 * Added: Sort ignored words when sorting user preferences

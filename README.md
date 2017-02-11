@@ -38,6 +38,7 @@ POLYFILL is a collection of fixes, commands, and other features for Sublime Text
 * `Project: Open Recent`
 * `Project: Open`
 * `Project: Switch`
+* `Resize Groups Almost Equally`
 * `Sort User Settings`
 * `Toggle Indent Guide`
 * `Toggle Invisibles`
