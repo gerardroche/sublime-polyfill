@@ -1,5 +1,7 @@
 # POLYFILL CHANGELOG
 
+* Added: Exclude themes/color-scheme in tests folders from enable theme/color-scheme command
+
 ## 1.4.0
 
 * Added: Resize Groups Almost Equally command

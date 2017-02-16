@@ -11,7 +11,7 @@ class EnableThemeCommand(sublime_plugin.ApplicationCommand):
         self.themes = []
 
         for theme in sublime.find_resources('*.sublime-theme'):
-            if "Addon" not in theme:
+            if "Addon" not in theme and "tests" not in theme:
                 self.themes.append(os.path.basename(theme))
 
         if len(self.themes) > 1:
@@ -34,7 +34,7 @@ class EnableColorSchemeCommand(sublime_plugin.ApplicationCommand):
         self.color_schemes = []
 
         for color_scheme in sublime.find_resources('*.tmTheme'):
-            if "(SL)" not in color_scheme:
+            if "(SL)" not in color_scheme and "tests" not in color_scheme:
                 self.color_schemes.append(color_scheme)
 
         if len(self.color_schemes) > 1:
