@@ -1,5 +1,8 @@
 # POLYFILL CHANGELOG
 
+## 1.5.0
+
+* Fixed: Menu paths
 * Added: Exclude themes/color-scheme in tests folders from enable theme/color-scheme command
 
 ## 1.4.0
