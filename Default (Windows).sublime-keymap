@@ -239,7 +239,7 @@
     //////////////////////////
 
     {
-        "keys": ["super+alt+2"],
+        "keys": ["alt+shift+2"],
         "command": "polyfill_set_layout",
         "args":
         {
@@ -249,7 +249,7 @@
         }
     },
     {
-        "keys": ["super+alt+3"],
+        "keys": ["alt+shift+3"],
         "command": "polyfill_set_layout",
         "args":
         {
@@ -259,7 +259,7 @@
         }
     },
     {
-        "keys": ["super+alt+4"],
+        "keys": ["alt+shift+4"],
         "command": "polyfill_set_layout",
         "args":
         {
@@ -269,7 +269,7 @@
         }
     },
     {
-        "keys": ["super+alt+5"],
+        "keys": ["alt+shift+5"],
         "command": "polyfill_set_layout",
         "args":
         {
@@ -283,7 +283,7 @@
         }
     },
     {
-        "keys": ["super+alt+shift+2"],
+        "keys": ["alt+shift+8"],
         "command": "polyfill_set_layout",
         "args":
         {
@@ -293,7 +293,7 @@
         }
     },
     {
-        "keys": ["super+alt+shift+3"],
+        "keys": ["alt+shift+9"],
         "command": "polyfill_set_layout",
         "args":
         {
@@ -303,7 +303,7 @@
         }
     },
     {
-        "keys": ["super+alt+r"],
+        "keys": ["ctrl+alt+r"],
         "command": "prompt_open_recent_project",
         "context": [
             {

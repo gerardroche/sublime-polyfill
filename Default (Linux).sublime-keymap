@@ -1,23 +1,4 @@
 [
-    // NOTES
-    // =====
-    //
-    // Settings checks won't work in the "sidebar_tree" control context
-    // ----------------------------------------------------------------
-    //
-    // Example, the following won't work, the "setting.any_setting" key
-    // check won't do anything. To work around this, see how the tree
-    // view commands work with settings.
-    // {
-    //     "keys": ["h"],
-    //     "command": "tree_view_move_left",
-    //     "context": [
-    //         { "key": "control", "operand": "sidebar_tree" },
-    //         { "key": "setting.any_setting" }
-    //     ]
-    // }
-    //
-
     /////////////////////
     // Overlay control //
     /////////////////////
