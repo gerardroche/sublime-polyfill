@@ -71,31 +71,31 @@ Key | Description
 
 Key | Description
 --- | -----------
-    <kbd>a</kbd> | add file
-    <kbd>A</kbd> | add folder
-    <kbd>d</kbd> | duplicate
-    <kbd>f</kbd> | find in files
-    <kbd>m</kbd> or <kbd>f2</kbd> | move/rename
-    <kbd>i</kbd> | open in split *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
-    <kbd>s</kbd> | open in vsplit *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
-    <kbd>t</kbd> | open in tab *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+<kbd>a</kbd> | add file
+<kbd>A</kbd> | add folder
+<kbd>d</kbd> | duplicate
+<kbd>f</kbd> | find in files
+<kbd>m</kbd> or <kbd>f2</kbd> | move/rename
+<kbd>i</kbd> | open in split *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+<kbd>s</kbd> | open in vsplit *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
+<kbd>t</kbd> | open in tab *(not implemented yet)* [#1](https://github.com/gerardroche/sublime-polyfill/issues/1)
 
 ### Overlay
 
 Key | Description
 --- | -----------
-    <kbd>ctrl+j</kbd> | down
-    <kbd>ctrl+k</kbd> | up
-    <kbd>ctrl+i</kbd> | open in split (requires [Origami], see [Installation](#dependencies))
-    <kbd>ctrl+s</kbd> | open in vsplit (requires [Origami], see [Installation](#dependencies))
-    <kbd>ctrl+t</kbd> | open in tab
+<kbd>ctrl+j</kbd> | down
+<kbd>ctrl+k</kbd> | up
+<kbd>ctrl+i</kbd> | open in split (requires [Origami], see [Installation](#dependencies))
+<kbd>ctrl+s</kbd> | open in vsplit (requires [Origami], see [Installation](#dependencies))
+<kbd>ctrl+t</kbd> | open in tab
 
 ### Autocomplete popup
 
 Key | Description
 --- | -----------
-    <kbd>ctrl+j</kbd> or <kbd>ctrl+n</kbd> | down / next
-    <kbd>ctrl+k</kbd> or <kbd>ctrl+p</kbd> | up / previous
+<kbd>ctrl+j</kbd> or <kbd>ctrl+n</kbd> | down / next
+<kbd>ctrl+k</kbd> or <kbd>ctrl+p</kbd> | up / previous
 
 ## CONFIGURATION
 
