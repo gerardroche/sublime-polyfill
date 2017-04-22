@@ -21,8 +21,8 @@ class TreeView():
         #
         # * Helps scroll active file into view
         # * Helps shakes off previous sidebar (highlighted) cursor position
-        self.window.run_command('move', { 'by': 'lines', 'forward': True })
-        self.window.run_command('move', { 'by': 'lines', 'forward': False })
+        self.window.run_command('move', {'by': 'lines', 'forward': True})
+        self.window.run_command('move', {'by': 'lines', 'forward': False})
 
     def ensure_file_under_cursor_is_open(self):
         preferences = self.load_preferences()
@@ -105,7 +105,7 @@ class TreeViewFinder(TreeView, sublime_plugin.WindowCommand):
 
     def run(self):
         # TODO can the current file directory be prefilled? #3
-        self.window.run_command('show_panel', { 'panel': 'find_in_files' } )
+        self.window.run_command('show_panel', {'panel': 'find_in_files'})
 
     def is_enabled(self):
         return self.experimental_features_enabled()
@@ -165,7 +165,7 @@ class TreeViewMoveUp(TreeView, sublime_plugin.WindowCommand):
 class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
     """Inspired by Vim CtrlP https://kien.github.io/ctrlp.vim/"""
 
-    def run(self, tab = None, split = None, vsplit = None):
+    def run(self, tab=None, split=None, vsplit=None):
         """
         :param tab:
             Open the selected file in a new tab
@@ -256,4 +256,3 @@ class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
             # shake off any visual artifacts like previous highlighted cursor
             # position.
             self.wibble_wobble()
-
