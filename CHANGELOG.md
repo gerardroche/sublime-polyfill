@@ -2,6 +2,12 @@
 
 All notable changes are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## 1.6.0
+
+### Added
+
+* Added: Toggle Highlight Line command
+
 ## 1.5.0
 
 ### Added

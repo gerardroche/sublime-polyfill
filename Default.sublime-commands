@@ -68,6 +68,10 @@
         "command": "toggle_invisibles"
     },
     {
+        "caption": "Toggle Highlight Line",
+        "command": "toggle_highlight_line"
+    },
+    {
         "caption": "Toggle Line Numbers",
         "command": "toggle_line_numbers"
     },
