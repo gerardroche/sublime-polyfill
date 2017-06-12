@@ -30,4 +30,3 @@ class PolyfillSetLayoutCommand(sublime_plugin.WindowCommand):
 
         view = self.window.active_view_in_group(active_group_before)
         self.window.set_view_index(view, self.window.active_group(), 0)
-

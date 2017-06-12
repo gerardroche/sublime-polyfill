@@ -3,6 +3,8 @@ import sublime_plugin
 
 class ResizeGroupsAlmostEquallyCommand(sublime_plugin.WindowCommand):
     """
+    Resize groups equally.
+
     Make all groups (almost) equally high and wide, but use 'winheight' and
     'winwidth' for the current window.  Windows with 'winfixheight' set keep
     their height and windows with 'winfixwidth' set keep their width.
@@ -17,7 +19,7 @@ class ResizeGroupsAlmostEquallyCommand(sublime_plugin.WindowCommand):
         layout = self.window.layout()
         col_count = len(layout['cols'])
         row_count = len(layout['rows'])
-#
+
         def equalise(count):
             size = round(1.0 / (count - 1), 2)
             vals = [0.0]

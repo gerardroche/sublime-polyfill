@@ -163,10 +163,12 @@ class TreeViewMoveUp(TreeView, sublime_plugin.WindowCommand):
 
 
 class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
-    """Inspired by Vim CtrlP https://kien.github.io/ctrlp.vim/"""
+    """Inspired by Vim CtrlP (https://kien.github.io/ctrlp.vim)."""
 
     def run(self, tab=None, split=None, vsplit=None):
         """
+        Open file.
+
         :param tab:
             Open the selected file in a new tab
         :param split:
@@ -176,9 +178,7 @@ class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
 
         Defaults to opening in a new tab.
         """
-
         # @todo open tree view file in tab #1
-
         transient_view = self.window.transient_view_in_group(self.window.active_group())
         if not transient_view:
             return
@@ -229,10 +229,11 @@ class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
 
     def run(self, sidebar_currently_focused):
         """
+        Toggle side bar.
+
         :param sidebar_currently_focused:
             Flag to indicate if the sidebar is currently focused
         """
-
         self.window.run_command('toggle_side_bar')
 
         if sidebar_currently_focused:

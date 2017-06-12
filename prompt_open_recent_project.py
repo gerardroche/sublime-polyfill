@@ -25,14 +25,13 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
         if index == -1:
             return
 
-        picked = self.recent_workspaces_that_really_exist[index];
+        picked = self.recent_workspaces_that_really_exist[index]
         index = self.recent_workspaces.index(picked)
 
         self.window.run_command('open_recent_project_or_workspace', {'index': index})
 
     def get_recent_workspaces(self):
-        """Returns an list > 0; otherwise None"""
-
+        """Return list > 0; otherwise None."""
         session = self.load_session()
         if not session:
             return None
@@ -60,8 +59,7 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
         return None
 
     def load_session(self):
-        """Returns dict or None if no session exists"""
-
+        """Return dict or None if no session exists."""
         local_session_path = os.path.join(os.path.dirname(sublime.packages_path()), 'Local')
         local_auto_save_session_file = os.path.join(local_session_path, 'Auto Save Session.sublime_session')
         local_session_file = os.path.join(local_session_path, 'Session.sublime_session')

@@ -2,10 +2,12 @@ import sublime_plugin
 
 
 class OverlayOpenFileCommand(sublime_plugin.WindowCommand):
-    """Open File; Inspired by Vim CtrlP https://kien.github.io/ctrlp.vim"""
+    """Open File; Inspired by Vim CtrlP (https://kien.github.io/ctrlp.vim)."""
 
-    def run(self, tab = None, split = None, vsplit = None):
+    def run(self, tab=None, split=None, vsplit=None):
         """
+        Open file from overlay.
+
         :param tab:
             Open the selected file in a new tab
         :param split:
@@ -15,7 +17,6 @@ class OverlayOpenFileCommand(sublime_plugin.WindowCommand):
 
         Defaults to opening in a new tab.
         """
-
         transient_view = self.window.transient_view_in_group(self.window.active_group())
         if not transient_view:
             return
