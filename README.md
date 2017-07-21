@@ -1,8 +1,8 @@
 # WHAT POLYFILL IS
 
-[![Author](https://img.shields.io/badge/author-@gerardroche-blue.svg?style=flat-square)](https://twitter.com/gerardroche) [![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg?style=flat-square)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill/stargazers) [![Latest version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?label=release&style=flat-square&maxAge=86400)](https://github.com/gerardroche/sublime-polyfill/tags)  [![Sublime version](https://img.shields.io/badge/sublime-v3.0.0-green.svg?style=flat-square)](https://sublimetext.com) [![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?style=flat-square&maxAge=86400)](https://packagecontrol.io/packages/polyfill)
+[![Minimum Sublime Version](https://img.shields.io/badge/sublime-%3E%3D%203.0-brightgreen.svg?style=flat-square)](https://sublimetext.com) [![Latest Stable Version](https://img.shields.io/github/tag/gerardroche/sublime-polyfill.svg?style=flat-square&label=stable)](https://github.com/gerardroche/sublime-polyfill/tags) [![GitHub stars](https://img.shields.io/github/stars/gerardroche/sublime-polyfill.svg?style=flat-square)](https://github.com/gerardroche/sublime-polyfill/stargazers) [![Downloads](https://img.shields.io/packagecontrol/dt/polyfill.svg?style=flat-square)](https://packagecontrol.io/packages/polyfill) [![Author](https://img.shields.io/badge/twitter-gerardroche-blue.svg?style=flat-square)](https://twitter.com/gerardroche)
 
-POLYFILL is a collection of fixes, commands, and other features for Sublime Text. It is inspired by Vim plugins such as [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) and [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim).
+Polyfill is a collection of fixes, commands, and other features for Sublime Text. It is inspired by Vim plugins such as [nerdtree](https://github.com/scrooloose/nerdtree) and [ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
 ## OVERVIEW
 
@@ -19,8 +19,8 @@ POLYFILL is a collection of fixes, commands, and other features for Sublime Text
 
 * Navigate sidebar (tree view) with `j` and `k`
 * Navigate sidebar (tree view) nodes with go to parent node `p`, root `P`, last `J`, and more
-* Navigate overlays and popups with `ctrl+j` and `ctrl+k`
-* Navigate autocomplete popup with `ctrl+n` and `ctrl+p`
+* Navigate overlays and pop-ups with `ctrl+j` and `ctrl+k`
+* Navigate auto-complete pop-up with `ctrl+n` and `ctrl+p`
 * Toggle sidebar with `,d` when using *Vintage/Vintageous*
 * Toggle indent guides command, and line numbers, rulers, invisibles, and more
 * Open recent project command, Sort user settings command, and more
@@ -90,7 +90,7 @@ Key | Description
 <kbd>ctrl+s</kbd> | open in vsplit (requires [Origami], see [Installation](#dependencies))
 <kbd>ctrl+t</kbd> | open in tab
 
-### Autocomplete popup
+### Auto-complete pop-up
 
 Key | Description
 --- | -----------
@@ -133,15 +133,14 @@ Key | Description | Type | Default
 
 Some features are considered experimental and require the "experimental_features" settings to be enabled. These features are disabled by default. See [Configurations](#configuration) for more details.
 
-* Some features require [SidebarEnhancements] `>=st3#a307090`.
-* Some features require [Vintageous] `~4.0`.
+* Some features require [NeoVintageous] `~1.0`.
 * Some features require [Origami].
 
-### Package Control
+### Package Control installation
 
-The preferred method of installation is [Package Control].
+The preferred method of installation is [Package Control](https://packagecontrol.io/browse/authors/gerardroche).
 
-### Manual
+### Manual installation
 
 1. Close Sublime Text.
 2. Download or clone this repository to a directory named **`polyfill`** in the Sublime Text Packages directory for your platform:
@@ -162,7 +161,5 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 Released under the [BSD 3-Clause License](LICENSE).
 
-[Package Control]: https://packagecontrol.io/browse/authors/gerardroche
 [Origami]: https://github.com/SublimeText/Origami
-[SidebarEnhancements]: https://packagecontrol.io/packages/SideBarEnhancements
-[Vintageous]: https://packagecontrol.io/packages/Vintageous
+[NeoVintageous]: https://packagecontrol.io/packages/NeoVintageous
