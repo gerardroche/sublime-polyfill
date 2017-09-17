@@ -1,11 +1,12 @@
-import sublime
-import sublime_plugin
+from sublime import load_settings
+from sublime import save_settings
+from sublime_plugin import WindowCommand
 
 
-class SortUserSettingsCommand(sublime_plugin.WindowCommand):
+class SortUserSettingsCommand(WindowCommand):
 
     def run(self):
-        settings = sublime.load_settings('Preferences.sublime-settings')
+        settings = load_settings('Preferences.sublime-settings')
 
         # ignored_packages
         ignored_packages = settings.get('ignored_packages', [])
@@ -32,4 +33,4 @@ class SortUserSettingsCommand(sublime_plugin.WindowCommand):
         folder_exclude_patterns.sort()
         settings.set('folder_exclude_patterns', folder_exclude_patterns)
 
-        sublime.save_settings('Preferences.sublime-settings')
+        save_settings('Preferences.sublime-settings')

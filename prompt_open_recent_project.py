@@ -1,12 +1,11 @@
 import os
 import json
 
+from sublime import packages_path
+from sublime_plugin import WindowCommand
 
-import sublime
-import sublime_plugin
 
-
-class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
+class PromptOpenRecentProjectCommand(WindowCommand):
 
     def run(self):
         self.recent_workspaces = self.get_recent_workspaces()
@@ -60,7 +59,7 @@ class PromptOpenRecentProjectCommand(sublime_plugin.WindowCommand):
 
     def load_session(self):
         """Return dict or None if no session exists."""
-        local_session_path = os.path.join(os.path.dirname(sublime.packages_path()), 'Local')
+        local_session_path = os.path.join(os.path.dirname(packages_path()), 'Local')
         local_auto_save_session_file = os.path.join(local_session_path, 'Auto Save Session.sublime_session')
         local_session_file = os.path.join(local_session_path, 'Session.sublime_session')
 

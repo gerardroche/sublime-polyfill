@@ -3,18 +3,19 @@
 # * Vim NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
 # See also hjkl navigation http://stackoverflow.com/a/17573049
 
-import sublime
-import sublime_plugin
+from sublime import load_settings
+from sublime import save_settings
+from sublime_plugin import WindowCommand
 
 
 class TreeView():
 
     # @todo optimise configuration handling
     def load_preferences(self):
-        return sublime.load_settings('Preferences.sublime-settings')
+        return load_settings('Preferences.sublime-settings')
 
     def save_preferences(self):
-        sublime.save_settings('Preferences.sublime-settings')
+        save_settings('Preferences.sublime-settings')
 
     def wibble_wobble(self):
         # Workaround ST API
@@ -74,7 +75,7 @@ class TreeView():
         return False
 
 
-class TreeViewAddFileCommand(TreeView, sublime_plugin.WindowCommand):
+class TreeViewAddFileCommand(TreeView, WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_new_file')
@@ -83,7 +84,7 @@ class TreeViewAddFileCommand(TreeView, sublime_plugin.WindowCommand):
         return self.experimental_features_enabled()
 
 
-class TreeViewAddFolderCommand(TreeView, sublime_plugin.WindowCommand):
+class TreeViewAddFolderCommand(TreeView, WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_new_directory')
@@ -92,7 +93,7 @@ class TreeViewAddFolderCommand(TreeView, sublime_plugin.WindowCommand):
         return self.experimental_features_enabled()
 
 
-class TreeViewDuplicateCommand(TreeView, sublime_plugin.WindowCommand):
+class TreeViewDuplicateCommand(TreeView, WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_duplicate')
@@ -101,7 +102,7 @@ class TreeViewDuplicateCommand(TreeView, sublime_plugin.WindowCommand):
         return self.experimental_features_enabled()
 
 
-class TreeViewFinder(TreeView, sublime_plugin.WindowCommand):
+class TreeViewFinder(TreeView, WindowCommand):
 
     def run(self):
         # TODO can the current file directory be prefilled? #3
@@ -111,25 +112,25 @@ class TreeViewFinder(TreeView, sublime_plugin.WindowCommand):
         return self.experimental_features_enabled()
 
 
-class TreeViewGoToParentNode(TreeView, sublime_plugin.WindowCommand):
+class TreeViewGoToParentNode(TreeView, WindowCommand):
 
     def run(self):
         self.window.run_command('move_to', {'to': 'bol', 'extend': False})
 
 
-class TreeViewGoToRootNode(TreeView, sublime_plugin.WindowCommand):
+class TreeViewGoToRootNode(TreeView, WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'characters', 'forward': False})
 
 
-class TreeViewGoToChildNode(TreeView, sublime_plugin.WindowCommand):
+class TreeViewGoToChildNode(TreeView, WindowCommand):
 
     def run(self):
         self.window.run_command('move_to', {'to': 'eol', 'extend': False})
 
 
-class TreeViewMoveCommand(TreeView, sublime_plugin.WindowCommand):
+class TreeViewMoveCommand(TreeView, WindowCommand):
 
     def run(self):
         self.run_command_for_file_under_cursor('side_bar_rename')
@@ -138,31 +139,31 @@ class TreeViewMoveCommand(TreeView, sublime_plugin.WindowCommand):
         return self.experimental_features_enabled()
 
 
-class TreeViewMoveDown(TreeView, sublime_plugin.WindowCommand):
+class TreeViewMoveDown(TreeView, WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'lines', 'forward': True})
 
 
-class TreeViewMoveLeft(TreeView, sublime_plugin.WindowCommand):
+class TreeViewMoveLeft(TreeView, WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'characters', 'forward': False})
 
 
-class TreeViewMoveRight(TreeView, sublime_plugin.WindowCommand):
+class TreeViewMoveRight(TreeView, WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'characters', 'forward': True})
 
 
-class TreeViewMoveUp(TreeView, sublime_plugin.WindowCommand):
+class TreeViewMoveUp(TreeView, WindowCommand):
 
     def run(self):
         self.window.run_command('move', {'by': 'lines', 'forward': False})
 
 
-class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
+class TreeViewOpenFileCommand(TreeView, WindowCommand):
     """Inspired by Vim CtrlP (https://kien.github.io/ctrlp.vim)."""
 
     def run(self, tab=None, split=None, vsplit=None):
@@ -211,7 +212,7 @@ class TreeViewOpenFileCommand(TreeView, sublime_plugin.WindowCommand):
         self.window.open_file(fname)
 
 
-class TreeViewRevealActiveFile(TreeView, sublime_plugin.WindowCommand):
+class TreeViewRevealActiveFile(TreeView, WindowCommand):
 
     def run(self):
         # Try to workaround ST issues:
@@ -225,7 +226,7 @@ class TreeViewRevealActiveFile(TreeView, sublime_plugin.WindowCommand):
         self.window.run_command('focus_side_bar')
 
 
-class TreeViewToggleCommand(TreeView, sublime_plugin.WindowCommand):
+class TreeViewToggleCommand(TreeView, WindowCommand):
 
     def run(self, sidebar_currently_focused):
         """

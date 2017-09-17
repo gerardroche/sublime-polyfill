@@ -1,7 +1,7 @@
-import sublime_plugin
+from sublime_plugin import WindowCommand
 
 
-class ResizeGroupsAlmostEquallyCommand(sublime_plugin.WindowCommand):
+class ResizeGroupsAlmostEquallyCommand(WindowCommand):
     """
     Resize groups equally.
 

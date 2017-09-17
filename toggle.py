@@ -1,26 +1,28 @@
-import sublime
-import sublime_plugin
+from sublime import load_settings
+from sublime import save_settings
+from sublime_plugin import WindowCommand
+from sublime_plugin import ApplicationCommand
 
 
-class ToggleUserSettingCommand(sublime_plugin.ApplicationCommand):
+class ToggleUserSettingCommand(ApplicationCommand):
 
     def run(self, key):
-        settings = sublime.load_settings('Preferences.sublime-settings')
+        settings = load_settings('Preferences.sublime-settings')
         settings = settings.set(key, not bool(settings.get(key, False)))
-        sublime.save_settings('Preferences.sublime-settings')
+        save_settings('Preferences.sublime-settings')
 
 
-class ToggleCommand(sublime_plugin.WindowCommand):
+class ToggleCommand(WindowCommand):
 
     def run(self):
         setting_name = self.get_setting_name()
-        settings = sublime.load_settings('Preferences.sublime-settings')
+        settings = load_settings('Preferences.sublime-settings')
         if settings.get(setting_name) != self.get_enabled_value():
             setting_value = self.get_enabled_value()
         else:
             setting_value = self.get_disable_value()
         settings.set(setting_name, setting_value)
-        sublime.save_settings('Preferences.sublime-settings')
+        save_settings('Preferences.sublime-settings')
 
     def description(self):
         view = self.window.active_view()

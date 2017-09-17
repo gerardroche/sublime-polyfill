@@ -1,94 +1,25 @@
 [
-    {
-        "caption": "Application: Clear Window",
-        "command": "clear_window"
-    },
-    {
-        "caption": "Application: Close Window",
-        "command": "close_window"
-    },
-    {
-        "caption": "Application: Enable Color Scheme",
-        "command": "enable_color_scheme"
-    },
-    {
-        "caption": "Application: Enable Theme",
-        "command": "enable_theme"
-    },
-    {
-        "caption": "Application: New File",
-        "command": "new_file"
-    },
-    {
-        "caption": "Application: New Window",
-        "command": "new_window"
-    },
-    {
-        "caption": "Application: Open File",
-        "command": "prompt_open_file"
-    },
-    {
-        "caption": "Application: Open Folder",
-        "command": "prompt_open_folder"
-    },
-    {
-        "caption": "Application: Quit",
-        "command": "exit"
-    },
-    {
-        "caption": "Application: Reset Window",
-        "command": "reset_window"
-    },
-    {
-        "caption": "Project: Open Recent",
-        "command": "prompt_open_recent_project"
-    },
-    {
-        "caption": "Project: Open",
-        "command": "prompt_open_project_or_workspace"
-    },
-    {
-        "caption": "Project: Switch",
-        "command": "prompt_switch_project_or_workspace"
-    },
-    {
-        "caption": "Resize Groups Almost Equally",
-        "command": "resize_groups_almost_equally"
-    },
-    {
-        "caption": "Sort User Settings",
-        "command": "sort_user_settings"
-    },
-    {
-        "caption": "Toggle Indent Guide",
-        "command": "toggle_indent_guide"
-    },
-    {
-        "caption": "Toggle Invisibles",
-        "command": "toggle_invisibles"
-    },
-    {
-        "caption": "Toggle Highlight Line",
-        "command": "toggle_highlight_line"
-    },
-    {
-        "caption": "Toggle Line Numbers",
-        "command": "toggle_line_numbers"
-    },
-    {
-        "caption": "Toggle Preview on Click",
-        "command": "toggle_preview_on_click"
-    },
-    {
-        "caption": "Toggle Rulers",
-        "command": "toggle_rulers"
-    },
-    {
-        "caption": "Toggle Save on Focus Lost",
-        "command": "toggle_save_on_focus_lost"
-    },
-    {
-        "caption": "View: Groups: Move File to New Group",
-        "command": "new_pane"
-    }
+    { "caption": "Application: Clear Window", "command": "clear_window" },
+    { "caption": "Application: Close Window", "command": "close_window" },
+    { "caption": "Application: Enable Color Scheme", "command": "enable_color_scheme" },
+    { "caption": "Application: Enable Theme", "command": "enable_theme" },
+    { "caption": "Application: New File", "command": "new_file" },
+    { "caption": "Application: New Window", "command": "new_window" },
+    { "caption": "Application: Open File", "command": "prompt_open_file" },
+    { "caption": "Application: Open Folder", "command": "prompt_open_folder" },
+    { "caption": "Application: Quit", "command": "exit" },
+    { "caption": "Application: Reset Window", "command": "reset_window" },
+    { "caption": "Project: Open Recent", "command": "prompt_open_recent_project" },
+    { "caption": "Project: Open", "command": "prompt_open_project_or_workspace" },
+    { "caption": "Project: Switch", "command": "prompt_switch_project_or_workspace" },
+    { "caption": "Resize Groups Almost Equally", "command": "resize_groups_almost_equally" },
+    { "caption": "Sort User Settings", "command": "sort_user_settings" },
+    { "caption": "Toggle Indent Guide", "command": "toggle_indent_guide" },
+    { "caption": "Toggle Invisibles", "command": "toggle_invisibles" },
+    { "caption": "Toggle Highlight Line", "command": "toggle_highlight_line" },
+    { "caption": "Toggle Line Numbers", "command": "toggle_line_numbers" },
+    { "caption": "Toggle Preview on Click", "command": "toggle_preview_on_click" },
+    { "caption": "Toggle Rulers", "command": "toggle_rulers" },
+    { "caption": "Toggle Save on Focus Lost", "command": "toggle_save_on_focus_lost" },
+    { "caption": "View: Groups: Move File to New Group", "command": "new_pane" }
 ]

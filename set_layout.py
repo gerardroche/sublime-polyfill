@@ -1,7 +1,7 @@
-import sublime_plugin
+from sublime_plugin import WindowCommand
 
 
-class PolyfillSetLayoutCommand(sublime_plugin.WindowCommand):
+class PolyfillSetLayoutCommand(WindowCommand):
 
     def run(self, cols, rows, cells):
         num_groups_before = self.window.num_groups()

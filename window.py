@@ -1,8 +1,9 @@
-import sublime
-import sublime_plugin
+from sublime import load_settings
+from sublime import save_settings
+from sublime_plugin import WindowCommand
 
 
-class ClearWindowCommand(sublime_plugin.WindowCommand):
+class ClearWindowCommand(WindowCommand):
 
     def run(self):
         if self.window.is_sidebar_visible():
@@ -19,17 +20,17 @@ class ClearWindowCommand(sublime_plugin.WindowCommand):
 
         self.window.run_command('resize_groups_almost_equally')
 
-        settings = sublime.load_settings('Preferences.sublime-settings')
+        settings = load_settings('Preferences.sublime-settings')
         settings.set('indent_guide_options', [])
         settings.set('line_numbers', False)
         settings.set('draw_white_space', 'selection')
         settings.set('rulers', [])
-        sublime.save_settings('Preferences.sublime-settings')
+        save_settings('Preferences.sublime-settings')
 
         self.window.run_command('sort_user_settings')
 
 
-class ResetWindowCommand(sublime_plugin.WindowCommand):
+class ResetWindowCommand(WindowCommand):
 
     def run(self):
         if not self.window.is_sidebar_visible():
