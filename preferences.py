@@ -63,10 +63,9 @@ class EnableColorSchemeCommand(sublime_plugin.ApplicationCommand):
                 active_view_in_group.settings().set('color_scheme', color_scheme)
 
     def on_done(self, index):
-        for view in self.window.views():
-            view.settings().erase('color_scheme')
-
         if index == -1:
+            for view in self.window.views():
+                view.settings().erase('color_scheme')
             return
 
         color_scheme = self.color_schemes[index]
@@ -74,3 +73,6 @@ class EnableColorSchemeCommand(sublime_plugin.ApplicationCommand):
         settings = sublime.load_settings('Preferences.sublime-settings')
         settings.set('color_scheme', color_scheme)
         sublime.save_settings('Preferences.sublime-settings')
+
+        for view in self.window.views():
+            view.settings().erase('color_scheme')
