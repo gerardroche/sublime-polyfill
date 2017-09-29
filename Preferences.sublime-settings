@@ -6,5 +6,5 @@
     "polyfill.keymaps": true,
 
     // Enable the `,d` vi mode toggle sidebar keybinding
-    "polyfill.vi_tree_view_toggle": true
+    "polyfill.vi_tree_view_toggle": false
 }
