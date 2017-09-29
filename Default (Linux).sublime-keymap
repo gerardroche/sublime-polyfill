@@ -93,7 +93,8 @@
         "command": "tree_view_toggle",
         "args": { "sidebar_currently_focused": true },
         "context": [
-            { "key": "control", "operand": "sidebar_tree" }
+            { "key": "control", "operand": "sidebar_tree" },
+            { "key": "setting.polyfill.vi_tree_view_toggle" }
         ]
     },
     {
