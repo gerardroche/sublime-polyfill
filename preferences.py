@@ -1,21 +1,28 @@
 import os
 
+from sublime import active_window
+from sublime import find_resources
+from sublime import load_settings
+from sublime import save_settings
+from sublime_plugin import ApplicationCommand
 
-import sublime
-import sublime_plugin
 
-
-class EnableThemeCommand(sublime_plugin.ApplicationCommand):
+class EnableThemeCommand(ApplicationCommand):
 
     def run(self):
         self.themes = []
 
-        for theme in sublime.find_resources('*.sublime-theme'):
-            if "Addon" not in theme and "tests" not in theme:
+        for theme in find_resources('*.sublime-theme'):
+            ignore = False
+            for exclude in ['Addon', 'tests']:
+                if exclude in theme:
+                    ignore = True
+
+            if not ignore:
                 self.themes.append(os.path.basename(theme))
 
         if len(self.themes) > 1:
-            sublime.active_window().show_quick_panel(self.themes, self.on_done)
+            active_window().show_quick_panel(self.themes, self.on_done)
 
     def on_done(self, index):
         if index == -1:
@@ -23,26 +30,31 @@ class EnableThemeCommand(sublime_plugin.ApplicationCommand):
 
         theme = self.themes[index]
 
-        settings = sublime.load_settings('Preferences.sublime-settings')
+        settings = load_settings('Preferences.sublime-settings')
         settings.set('theme', theme)
-        sublime.save_settings('Preferences.sublime-settings')
+        save_settings('Preferences.sublime-settings')
 
 
-class EnableColorSchemeCommand(sublime_plugin.ApplicationCommand):
+class EnableColorSchemeCommand(ApplicationCommand):
 
     def run(self):
         self.color_schemes = []
 
-        for color_scheme in sublime.find_resources('*.tmTheme'):
-            if "(SL)" not in color_scheme and "tests" not in color_scheme:
+        for color_scheme in find_resources('*.tmTheme'):
+            ignore = False
+            for exclude in ['(SL)', 'Color Highlighter', 'tests']:
+                if exclude in color_scheme:
+                    ignore = True
+
+            if not ignore:
                 self.color_schemes.append(color_scheme)
 
         if len(self.color_schemes) > 1:
-            color_scheme = sublime.load_settings('Preferences.sublime-settings').get('color_scheme')
+            color_scheme = load_settings('Preferences.sublime-settings').get('color_scheme')
             if color_scheme not in self.color_schemes:
                 self.color_schemes.insert(0, color_scheme)
 
-            self.window = sublime.active_window()
+            self.window = active_window()
             self.window.show_quick_panel(
                 self.color_schemes,
                 self.on_done,
@@ -70,9 +82,9 @@ class EnableColorSchemeCommand(sublime_plugin.ApplicationCommand):
 
         color_scheme = self.color_schemes[index]
 
-        settings = sublime.load_settings('Preferences.sublime-settings')
+        settings = load_settings('Preferences.sublime-settings')
         settings.set('color_scheme', color_scheme)
-        sublime.save_settings('Preferences.sublime-settings')
+        save_settings('Preferences.sublime-settings')
 
         for view in self.window.views():
             view.settings().erase('color_scheme')
