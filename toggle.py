@@ -48,6 +48,14 @@ class ToggleCommand(WindowCommand):
         return True
 
 
+class ToggleFoldButtonsCommand(ToggleCommand):
+    pass
+
+
+class ToggleHighlightLineCommand(ToggleCommand):
+    pass
+
+
 class ToggleIndentGuideCommand(ToggleCommand):
 
     def get_setting_name(self):
@@ -76,10 +84,6 @@ class ToggleInvisiblesCommand(ToggleCommand):
 
 
 class ToggleLineNumbersCommand(ToggleCommand):
-    pass
-
-
-class ToggleHighlightLineCommand(ToggleCommand):
     pass
 
 

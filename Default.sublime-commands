@@ -14,6 +14,7 @@
     { "caption": "Project: Switch", "command": "prompt_switch_project_or_workspace" },
     { "caption": "Resize Groups Almost Equally", "command": "resize_groups_almost_equally" },
     { "caption": "Sort User Settings", "command": "sort_user_settings" },
+    { "caption": "Toggle Fold Buttons", "command": "toggle_fold_buttons" },
     { "caption": "Toggle Indent Guide", "command": "toggle_indent_guide" },
     { "caption": "Toggle Invisibles", "command": "toggle_invisibles" },
     { "caption": "Toggle Highlight Line", "command": "toggle_highlight_line" },
