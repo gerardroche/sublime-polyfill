@@ -7,6 +7,7 @@ from sublime import find_resources
 from sublime import load_settings
 from sublime import packages_path
 from sublime import save_settings
+from sublime import status_message
 from sublime_plugin import ApplicationCommand
 from sublime_plugin import WindowCommand
 
@@ -387,6 +388,11 @@ class ToggleCommand(WindowCommand):
         preferences.set(preference_name, setting_value)
 
         _save_preferences()
+
+        status_message('{} is {}'.format(
+            self.get_preference_description(),
+            'enabled' if setting_value == self.get_enabled_value() else 'disabled'
+        ))
 
     def description(self):
         view = self.window.active_view()
