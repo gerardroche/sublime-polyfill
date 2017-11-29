@@ -2,6 +2,24 @@
 
 All notable changes are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## Unreleased
+
+## Added
+
+* Added: Sort User Settings command now sorts `added_words`
+* Added: Status message for toggle commands
+* Added: Toggle Fold Buttons command
+
+## Changed
+
+* Changed: `vi_tree_view_toggle` is now disabled by default
+
+## Fixed
+
+* Fixed: Several Sort User Settings command issues
+* Fixed: Missing `vi_tree_toggle` context setting check
+* Fixed: Edge-case issue enabling color scheme
+
 ## 1.6.0
 
 ### Added
