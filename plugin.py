@@ -290,6 +290,9 @@ class PromptOpenRecentProjectCommand(WindowCommand):
 class ResetWindowCommand(WindowCommand):
 
     def run(self):
+
+        self.window.run_command('reset_font_size')
+
         if not self.window.is_sidebar_visible():
             self.window.set_sidebar_visible(True)
 
