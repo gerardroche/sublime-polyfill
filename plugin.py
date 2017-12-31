@@ -292,6 +292,13 @@ class ResetWindowCommand(sublime_plugin.WindowCommand):
 
         self.window.run_command('reset_font_size')
 
+        view = self.window.active_view()
+        font_size = view.settings().get('font_size_default') if view else None
+        if font_size:
+            preferences = _load_preferences()
+            preferences.set('font_size', font_size)
+            _save_preferences()
+
         if not self.window.is_sidebar_visible():
             self.window.set_sidebar_visible(True)
 
@@ -451,7 +458,15 @@ class ToggleIndentGuideCommand(ToggleCommand):
         return []
 
     def get_enabled_value(self):
-        return ['draw_normal', 'draw_active']
+        view = self.window.active_view()
+        indent_guide_options = view.settings().get('indent_guide_options_default') if view else None
+        if indent_guide_options:
+            return indent_guide_options
+        else:
+            return [
+                'draw_normal',
+                'draw_active'
+            ]
 
 
 class ToggleInvisiblesCommand(ToggleCommand):
@@ -460,6 +475,11 @@ class ToggleInvisiblesCommand(ToggleCommand):
         return 'draw_white_space'
 
     def get_disable_value(self):
+        view = self.window.active_view()
+        draw_white_space = view.settings().get('draw_white_space_disabled_default') if view else None
+        if draw_white_space:
+            return draw_white_space
+
         return 'selection'
 
     def get_enabled_value(self):
