@@ -4,17 +4,6 @@
 
 Polyfill is a collection of fixes, commands, and other features for Sublime Text. It is inspired by Vim plugins such as [nerdtree](https://github.com/scrooloose/nerdtree) and [ctrlp.vim](https://github.com/kien/ctrlp.vim).
 
-## OVERVIEW
-
-* [Features](#features)
-* [Commands](#commands)
-* [Key Bindings](#key-bindings)
-* [Configuration](#configuration)
-* [Installation](#installation)
-* [Contributing](#contributing)
-* [Changelog](#changelog)
-* [License](#license)
-
 ## FEATURES
 
 * Navigate sidebar (tree view) with `j` and `k`
@@ -109,7 +98,7 @@ Key | Description | Type | Default
 
 ### User Settings
 
-`Preferences > Settings - User`
+`Menu > Preferences > Settings - User`
 
 ```json
 {
@@ -119,7 +108,7 @@ Key | Description | Type | Default
 
 ### Per-Project Settings
 
-`Project > Edit Project`
+`Menu > Project > Edit Project`
 
 ```json
 {
@@ -142,19 +131,11 @@ The preferred method of installation is [Package Control](https://packagecontrol
 
 ### Manual installation
 
-Close Sublime Text then download or clone this repository to a directory named `polyfill` in the Sublime Text Packages directory for your platform:
+Close Sublime Text, then download or clone this repository to a directory named `polyfill` in the Sublime Text Packages directory for your platform:
 
 * Linux: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/.config/sublime-text-3/Packages/polyfill`
 * OSX: `git clone https://github.com/gerardroche/sublime-polyfill.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/polyfill`
 * Windows: `git clone https://github.com/gerardroche/sublime-polyfill.git %APPDATA%\Sublime/ Text/ 3/Packages/polyfill`
-
-## CONTRIBUTING
-
-Your issue reports and pull requests are always welcome.
-
-## CHANGELOG
-
-See [CHANGELOG.md](CHANGELOG.md).
 
 ## LICENSE
 

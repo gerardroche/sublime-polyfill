@@ -29,13 +29,6 @@
                                 }
                             },
                             {
-                                "caption": "CHANGELOG",
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/polyfill/CHANGELOG.md"
-                                }
-                            },
-                            {
                                 "caption": "-"
                             },
                             {
