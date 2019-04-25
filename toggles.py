@@ -1,6 +1,7 @@
 from sublime import load_settings
 from sublime import save_settings
 from sublime import status_message
+from sublime import windows
 import sublime_plugin
 
 
@@ -24,6 +25,10 @@ class ToggleCommand(sublime_plugin.WindowCommand):
             setting_value = self.get_disable_value()
 
         preferences.set(preference_name, setting_value)
+
+        for window in windows():
+            for view in window.views():
+                view.settings().erase(preference_name)
 
         _save_preferences()
 
