@@ -6,7 +6,6 @@
     { "caption": "Application: New File", "command": "new_file" },
     { "caption": "Application: New Window", "command": "new_window" },
     { "caption": "Application: Reset Window", "command": "reset_window" },
-    { "caption": "Preferences: Sort User Settings", "command": "sort_user_settings" },
     { "caption": "Project: Open Recent", "command": "prompt_open_recent_project" },
     { "caption": "Project: Open", "command": "prompt_open_project_or_workspace" },
     { "caption": "Project: Switch", "command": "prompt_switch_project_or_workspace" },
