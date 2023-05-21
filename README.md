@@ -98,7 +98,7 @@ Key | Description | Type | Default
 
 ### User Settings
 
-`Menu > Preferences > Settings - User`
+**Menu → Preferences → Settings - User**
 
 ```json
 {
@@ -108,7 +108,7 @@ Key | Description | Type | Default
 
 ### Per-Project Settings
 
-`Menu > Project > Edit Project`
+**Menu → Project → Edit Project**
 
 ```json
 {
